@@ -1,12 +1,14 @@
 <template>
   <UContainer class="w-full flex items-center justify-between">
     <div>
-      <ULink to="/">Home</ULink>
+      <ULink to="/">
+        <img src="/img/logo_white.avif" alt="philocircus logo" class="absolute top-4 left-4 md:left-24 w-14 md:w-20"
+      /></ULink>
     </div>
-    <UButton @click="toggleMenu()" class="block md:hidden">
+    <UButton @click="toggleMenu()" class="block md:hidden mt-4">
       <Icon :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'" class="w-4 h-4 mt-1" />
     </UButton>
-    <div class="hidden md:flex">
+    <div class="hidden md:flex justify-between">
       <UHorizontalNavigation :links="horizontalLinks" />
     </div>
     <div
@@ -15,9 +17,9 @@
     >
       <UVerticalNavigation :links="verticalLinks" />
     </div>
-    <div class="flex items-center justify-center gap-2">
-      <!-- <UToggle v-model="isDark" on-icon="i-heroicons-moon" off-icon="i-heroicons-sun" size="lg" /> -->
-    </div>
+    <!-- <div class="flex items-center justify-center gap-2"> -->
+    <!-- <UToggle v-model="isDark" on-icon="i-heroicons-moon" off-icon="i-heroicons-sun" size="lg" /> -->
+    <!-- </div> -->
   </UContainer>
 </template>
 
@@ -35,7 +37,8 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 //   },
 // });
 const horizontalLinks = [
-  { label: "Home", icon: "i-heroicons-home", to: "/" },
+  { label: "Home", to: "/" },
+  { label: "Projects", to: "/projects" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
