@@ -17,25 +17,19 @@
     >
       <UVerticalNavigation :links="verticalLinks" />
     </div>
-    <!-- <div class="flex items-center justify-center gap-2"> -->
-    <!-- <UToggle v-model="isDark" on-icon="i-heroicons-moon" off-icon="i-heroicons-sun" size="lg" /> -->
-    <!-- </div> -->
+
+    <div>
+      <button @click="setLocale('en')">en</button>
+      <button @click="setLocale('fr')">fr</button>
+    </div>
   </UContainer>
 </template>
 
 <script setup lang="ts">
 const isMenuOpen = ref(false);
 const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
-// const colorMode = useColorMode();
-// const colorMode = ref("light");
-// const isDark = computed({
-//   get() {
-//     return colorMode.value === "dark";
-//   },
-//   set() {
-//     colorMode.value = colorMode.value === "dark" ? "light" : "dark";
-//   },
-// });
+const { setLocale } = useI18n();
+
 const horizontalLinks = [
   { label: "Home", to: "/" },
   { label: "Projects", to: "/projects" },

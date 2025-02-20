@@ -1,29 +1,17 @@
 <template>
-  <UContainer class="w-full flex items-center justify-center">
-    <div class="flex justify-center text-white w-full">
-      <UHorizontalNavigation :links="horizontalLinks" class="w-full max-w-lg justify-evenly" size="lg" />
+  <UContainer class="w-full flex items-center justify-center mb-8">
+    <div class="flex justify-center gap-24 text-primary-500 w-full">
+      <NuxtLink to="https://www.facebook.com/philocircus" class="hover:text-primary-400">
+        <UIcon name="i-lucide-facebook" class="w-10 h-10" /> </NuxtLink
+      ><NuxtLink to="https://www.youtube.com/channel/UCqjMPNrbz8uJJfWXYbT9RIQ" class="hover:text-primary-400">
+        <UIcon name="i-lucide-youtube" class="w-10 h-10" /> </NuxtLink
+      ><NuxtLink to="https://www.instagram.com/philocircus" class="hover:text-primary-400">
+        <UIcon name="i-lucide-instagram" class="w-10 h-10" />
+      </NuxtLink>
     </div>
   </UContainer>
 </template>
 
-<script setup lang="ts">
-const horizontalLinks = [
-  {
-    label: "",
-    icon: "i-lucide-facebook",
-    to: "https://www.facebook.com/philocircus",
-    target: "_blank",
-    iconClass: "w-8",
-  },
-  {
-    label: "",
-    icon: "i-lucide-youtube",
-    to: "https://www.youtube.com/channel/UCqjMPNrbz8uJJfWXYbT9RIQ",
-    target: "_blank",
-    iconClass: "text-3xl",
-  },
-  { label: "", icon: "i-lucide-instagram", to: "https://www.instagram.com/philocircus", target: "_blank" },
-];
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>
