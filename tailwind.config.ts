@@ -6,6 +6,9 @@ export default {
       colors: {
         primary: colors.red,
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
     },
   },
 };

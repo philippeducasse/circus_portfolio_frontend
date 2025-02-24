@@ -1,9 +1,9 @@
 <template>
-  <div>philocircus Home page</div>
+  <Hero />
 </template>
 
 <script setup lang="ts">
-const { setLocale } = useI18n();
+import Hero from "~/components/layout/Hero.vue";
 </script>
 
 <style lang="scss" scoped></style>

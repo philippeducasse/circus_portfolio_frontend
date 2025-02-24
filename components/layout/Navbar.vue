@@ -2,7 +2,10 @@
   <UContainer class="w-full flex items-center justify-between">
     <div>
       <ULink to="/">
-        <img src="/img/logo_white.avif" alt="philocircus logo" class="absolute top-4 left-4 md:left-24 w-14 md:w-20"
+        <img
+          src="/img/logo_white.avif"
+          alt="philocircus logo"
+          class="fixed md:left-24 w-14 md:w-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       /></ULink>
     </div>
     <UButton @click="toggleMenu()" class="block md:hidden mt-4">

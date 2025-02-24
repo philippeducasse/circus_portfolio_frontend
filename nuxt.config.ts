@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxtjs/i18n"],
   colorMode: {
-    preference: "light",
-    fallback: "light",
+    preference: "dark",
+    fallback: "dark",
     classSuffix: "", // Prevents adding dark-mode classes
   },
   i18n: {
