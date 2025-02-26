@@ -6,7 +6,7 @@
       v-slot="{ item }"
       :items="items"
       :ui="{ item: 'basis-full' }"
-      class="w-96 mx-auto rounded-lg overflow-hidden"
+      class="w-72 md:w-96 mx-auto rounded-lg overflow-hidden"
     >
       <img :src="item" draggable="false" class="w-full h-full" />
     </UCarousel>

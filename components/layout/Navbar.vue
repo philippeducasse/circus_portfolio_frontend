@@ -29,7 +29,7 @@ const horizontalLinks = [
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
-const verticalLinks = [...horizontalLinks];
+const verticalLinks = [...horizontalLinks, { label: "en", click: setLocale("en") }];
 </script>
 
 <style scoped></style>
