@@ -1,7 +1,7 @@
 <template>
   <h2>{{ $t("projects_header") }}</h2>
   <div class="flex flex-col items-center p-4 text-left">
-    <div class="flex mt-20 mb-5 gap-10">
+    <div class="flex flex-col lg:flex-row mt-20 mb-5 gap-10">
       <div class="flex flex-col justify-evenly">
         <h3 class="text-center">Lulu</h3>
         <p>{{ $t("lulu") }}</p>
