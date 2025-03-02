@@ -17,4 +17,7 @@
   h4 {
     @apply text-lg md:text-xl font-normal;
   }
+  /* iframe {
+    @apply aspect-w-16 aspect-h-9;
+  } */
 }

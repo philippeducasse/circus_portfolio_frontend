@@ -6,8 +6,9 @@
         <h3 class="text-center">Lulu</h3>
         <p>{{ $t("lulu") }}</p>
       </div>
-      <div class="youtube-container">
+      <div class="relative w-full max-w-3xl aspect-video">
         <iframe
+          class="absolute inset-0 w-full h-full"
           width="560"
           height="315"
           src="https://www.youtube-nocookie.com/embed/mRTKk2jQAa0?si=OsjYt2B87_LdDiao&amp;controls=0"
@@ -18,9 +19,10 @@
         ></iframe>
       </div>
     </div>
-    <div class="flex my-16 gap-10">
-      <div class="youtube-container">
+    <div class="flex my-16 gap-10 flex-col lg:flex-row">
+      <div class="relative w-full max-w-3xl aspect-video">
         <iframe
+          class="absolute inset-0 w-full h-full"
           width="560"
           height="315"
           src="https://www.youtube-nocookie.com/embed/gq4O41LFR6g?si=g6Its14Au8zlKcCw&amp;controls=0"
@@ -36,13 +38,14 @@
         <p>{{ $t("abb") }}</p>
       </div>
     </div>
-    <div class="flex mt-5 gap-10">
+    <div class="flex mt-5 gap-10 flex-col lg:flex-row">
       <div class="flex flex-col justify-evenly">
         <h3 class="text-center">Stone and other pieces</h3>
         <p>{{ $t("stone") }}</p>
       </div>
-      <div class="youtube-container">
+      <div class="relative w-full max-w-3xl aspect-video">
         <iframe
+          class="absolute inset-0 w-full h-full"
           width="560"
           height="315"
           src="https://www.youtube-nocookie.com/embed/9cfrJuHebWM?si=OsjYt2B87_LdDiao&amp;controls=0"
