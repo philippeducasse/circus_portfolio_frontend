@@ -4,6 +4,7 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       welcome: "Welcome",
+      hero_subtitle: "Contemporary Circus and Mime",
       projects_header:
         "Philippe's performances blend circus, theatre, and dance to connect with audiences over a variety of topics.",
       lulu: "Lulu is a 45-minute contemporary circus piece created and performed by Philippe. It tells the story of a troubled individual desperately searching for the solution to all of his problems - 'Lulu'. The varied piece includes mime, object manipulation, acrobatics, and dance - as well as strong use of dark humour.",
@@ -48,6 +49,7 @@ export default defineI18nConfig(() => ({
       ],
     },
     fr: {
+      hero_subtitle: "Cirque et mime contemporain",
       welcome: "Bienvenue",
       projects_header:
         "Les spectacles de Philippe mêlent cirque, théâtre et danse pour établir un lien avec le public sur divers sujets.",

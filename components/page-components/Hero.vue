@@ -10,7 +10,7 @@
     >
       <img :src="item" draggable="false" class="w-full h-full" />
     </UCarousel>
-    <h2>Contemporary Circus and Mime</h2>
+    <h2>{{ $t("hero_subtitle") }}</h2>
   </div>
 </template>
 

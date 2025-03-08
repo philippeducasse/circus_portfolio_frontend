@@ -1,12 +1,13 @@
 <template>
-  <h2>{{ $t("projects_header") }}</h2>
+  <h2 class="text-center text-3xl font-semibold">{{ $t("projects_header") }}</h2>
+
   <div class="flex flex-col items-center p-4 text-left">
-    <div class="flex flex-col lg:flex-row mt-20 mb-5 gap-10">
-      <div class="flex flex-col justify-evenly">
-        <h3 class="text-center">Lulu</h3>
+    <div class="flex flex-col lg:flex-row mt-20 mb-5 gap-10 w-full max-w-6xl">
+      <div class="flex flex-col justify-evenly flex-1">
+        <h3 class="text-center text-xl font-semibold mb-6 lg:mb-0">Lulu</h3>
         <p>{{ $t("lulu") }}</p>
       </div>
-      <div class="relative w-full max-w-3xl aspect-video">
+      <div class="relative w-full lg:w-[60%] max-w-4xl aspect-video">
         <iframe
           class="absolute inset-0 w-full h-full"
           width="560"
@@ -19,8 +20,13 @@
         ></iframe>
       </div>
     </div>
-    <div class="flex my-16 gap-10 flex-col lg:flex-row">
-      <div class="relative w-full max-w-3xl aspect-video">
+
+    <div class="flex my-16 gap-10 flex-col w-full max-w-6xl lg:flex-row-reverse">
+      <div class="flex flex-col justify-evenly flex-1">
+        <h3 class="text-center text-xl font-semibold mb-6 lg:mb-0">Ah Bah Bravo!</h3>
+        <p>{{ $t("abb") }}</p>
+      </div>
+      <div class="relative w-full lg:w-[60%] max-w-4xl aspect-video">
         <iframe
           class="absolute inset-0 w-full h-full"
           width="560"
@@ -33,17 +39,14 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div class="flex flex-col justify-evenly">
-        <h3 class="text-center">Ah Bah Bravo!</h3>
-        <p>{{ $t("abb") }}</p>
-      </div>
     </div>
-    <div class="flex mt-5 gap-10 flex-col lg:flex-row">
-      <div class="flex flex-col justify-evenly">
-        <h3 class="text-center">Stone and other pieces</h3>
+
+    <div class="flex mt-5 gap-10 flex-col lg:flex-row w-full max-w-6xl">
+      <div class="flex flex-col justify-evenly flex-1">
+        <h3 class="text-center text-xl font-semibold mb-6 lg:mb-0">Stone and other pieces</h3>
         <p>{{ $t("stone") }}</p>
       </div>
-      <div class="relative w-full max-w-3xl aspect-video">
+      <div class="relative w-full lg:w-[60%] max-w-4xl aspect-video">
         <iframe
           class="absolute inset-0 w-full h-full"
           width="560"
@@ -58,7 +61,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>
