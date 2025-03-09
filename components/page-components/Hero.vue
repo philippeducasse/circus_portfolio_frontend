@@ -1,12 +1,12 @@
 <template>
-  <div class="text-center flex flex-col h-full items-center gap-y-[10vh] justify-evenly mt-4">
+  <div class="text-center flex flex-col h-full items-center gap-y-[5vh] justify-evenly mt-4">
     <h1>Philippe Ducasse</h1>
     <UCarousel
       ref="carouselRef"
       v-slot="{ item }"
       :items="items"
       :ui="{ item: 'basis-full' }"
-      class="w-72 md:w-96 mx-auto rounded-lg overflow-hidden"
+      class="w-72 md:w-2/3 mx-auto rounded-lg overflow-hidden"
     >
       <img :src="item" draggable="false" class="w-full h-full" />
     </UCarousel>
