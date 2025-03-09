@@ -13,6 +13,9 @@ export default defineI18nConfig(() => ({
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
       about:
         "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. Growing up between Paris and Milan, Philippe was captivated by painting and music from an early age, and as a teenager quickly fell in love with dance and juggling. After obtaining a bachelor’s degree in psychology from the University of Exeter, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals including Usedom Kleinkunst Festival, International Storytelling Festival, Aurillac Festival, Fusion Festival, Brianza Juggling Convention, and others. Philippe is based in Berlin, where he also performs and teaches.",
+      contact_title: "Contact",
+      contact_content:
+        "You can write me at info@philippeducasse.com. I'm happy to hear about collaboartion proposals as well!",
       dates_past: "Past Performances",
       "2024": [
         "22-24th February: Performance for Arte Documentary 'Bugatti Step', Leipzig, Germany",
