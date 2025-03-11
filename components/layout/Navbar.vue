@@ -1,7 +1,7 @@
 <template>
-  <UContainer class="w-full flex items-center justify-between">
+  <UContainer class="w-full flex items-center justify-evenly">
     <div class="hidden md:flex md:justify-evenly w-full">
-      <UHorizontalNavigation :links="horizontalLinks" class="w-2/3 lg:w-1/3" />
+      <UHorizontalNavigation :links="horizontalLinks" class="w-fit" />
       <LogoWithName />
       <div class="hidden md:flex gap-2">
         <button @click="setLocale('en')">en</button>
@@ -10,11 +10,11 @@
     </div>
 
     <div class="flex items-center justify-between w-full md:hidden place-content-center">
-      <UButton @click="toggleMenu" class="mt-4 z-50 flex items-center self-stretch" color="primary">
-        <Icon :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'" class="w-5 h-5" />
+      <UButton @click="toggleMenu" class="my-4 z-50 flex items-center self-stretch" color="primary">
+        <Icon :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'" class="w-5 h-5 flex-grow-0" />
       </UButton>
 
-      <img src="../../public/img/logo_name.png" width="150" class="ml-auto" />
+      <img src="../../public/img/logo_name.png" width="150" class="ml-auto mt-4 md:mt-0" alt="Philippe Ducasse logo" />
     </div>
 
     <div v-if="isMenuOpen" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-40" @click="closeMenu">
@@ -53,6 +53,8 @@ const horizontalLinks = [
   { label: "Projects", to: "/projects", click: () => (isMenuOpen.value = false) },
   { label: "About", to: "/about", click: () => (isMenuOpen.value = false) },
   { label: "Contact", to: "/contact", click: () => (isMenuOpen.value = false) },
+  { label: "Calendar", to: "/calendar", click: () => (isMenuOpen.value = false) },
+  { label: "Support", to: "/support", click: () => (isMenuOpen.value = false) },
 ];
 
 const verticalLinks = [

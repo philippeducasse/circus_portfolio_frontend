@@ -11,11 +11,12 @@ export default defineI18nConfig(() => ({
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
       stone:
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
+      about_title: "About",
       about:
         "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. Growing up between Paris and Milan, Philippe was captivated by painting and music from an early age, and as a teenager quickly fell in love with dance and juggling. After obtaining a bachelor’s degree in psychology from the University of Exeter, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals including Usedom Kleinkunst Festival, International Storytelling Festival, Aurillac Festival, Fusion Festival, Brianza Juggling Convention, and others. Philippe is based in Berlin, where he also performs and teaches.",
       contact_title: "Contact",
       contact_content:
-        "You can write me at info@philippeducasse.com. I'm happy to hear about collaboartion proposals as well!",
+        "You can write me at info{'@'}philippeducasse.com. I'm happy to hear about collaboartion proposals as well!",
       dates_past: "Past Performances",
       "2024": [
         "22-24th February: Performance for Arte Documentary 'Bugatti Step', Leipzig, Germany",
@@ -60,6 +61,7 @@ export default defineI18nConfig(() => ({
       abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
       stone:
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
+      about_title: "À Propos",
       about:
         "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime.",
       dates_past: "Performances passées",

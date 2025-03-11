@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center flex flex-col h-full items-center gap-y-[5vh] justify-evenly mt-4">
+  <div class="text-center flex flex-col h-full items-center gap-y-[5vh] justify-evenly md:-mt-4">
     <h1>Philippe Ducasse</h1>
     <UCarousel
       ref="carouselRef"

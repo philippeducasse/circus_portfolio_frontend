@@ -1,6 +1,7 @@
 <template>
-  <div class="flex flex-col md:flex-row md:gap-16 items-center">
-    <p class="flex-1">{{ $t("about") }}</p>
+  <h2 class="pb-8 md:pb-16">{{ $t("about_title") }}</h2>
+  <div class="flex flex-col md:flex-row md:gap-16 gap-y-10 items-center">
+    <p class="flex-1 text-left">{{ $t("about") }}</p>
     <UCarousel
       ref="carouselRef"
       v-slot="{ item }"
