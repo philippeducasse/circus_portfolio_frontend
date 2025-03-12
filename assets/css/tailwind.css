@@ -30,4 +30,7 @@
     font-weight: 200;
     font-size: 0.9rem;
   }
+  .preformatted-text {
+    white-space: pre-wrap;
+  }
 }

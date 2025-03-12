@@ -17,40 +17,19 @@ export default defineI18nConfig(() => ({
       contact_title: "Contact",
       contact_content:
         "You can write me at info{'@'}philippeducasse.com. I'm happy to hear about collaboartion proposals as well!",
-      dates_past: "Past Performances",
-      "2024": [
-        "22-24th February: Performance for Arte Documentary 'Bugatti Step', Leipzig, Germany",
-        "18-24th March: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia",
-        "28-30th March: Moha at Zirkus Mond, Berlin, Germany",
-        "9-10th May: Lulu & Ah Bah Bravo! at KLP Festival, Mützingen, Germany",
-        "17-19th May: Ah Bah Bravo! at KLP Festival, Güstritz, Germany",
-        "15-16th June: Lulu & Ah Bah Bravo! at Gauklerfest, Germany",
-        "23rd July: I become a dad! of TWINS!!",
-        "17th August: Lulu at Gute Laune Festival, Halle, Germany",
-        "2nd of November: New WIP piece at Neue Bühne Friedrichshain, Berlin, Germany",
-      ],
-      "2023": [
-        "February 1-5th: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia",
-        "17-19th March: Lulu at Theaterforum Kreuzberg, Berlin, DE",
-        "30th April: Ah Bah Bravo! At Bad Nenndorf, DE",
-        "18-20th May: Ah Bah Bravo! At KLP Festival, DE",
-        "23-25th May: Lulu at Brighton Fringe Festival, UK",
-        "26-28th May: Ah Bah Bravo! At KLP Festival, DE",
-        "29th May: Lulu at Freiburg Jongliere Convention, DE",
-        "2-3rd June: Moha at Zirkus Mond, Berlin, DE",
-        "10th June: Ah Bah Bravo! at Jahninselfest, Augsburg, DE",
-        "9th July: Ah Bah Bravo! at Nikolaiveirtel, Berlin, DE",
-      ],
-      "2022": [
-        "9-10 October - LULU at Villa Kuriosum, Berlin, Germany",
-        "27 August - MOHA at Phoenix Fire Convention, Germany",
-        "26 August - LULU at Parasola Festival, Klingelmühle, Germany (CANCELED)",
-        "17 - 20 August - LULU & AH BAH BRAVO! at Festival d´Aurillac, France",
-      ],
-      "2021": [
-        "03. December - LULU at Zirkusquartier, Zürich, Switzerland",
-        "5. August - LULU at Sommermusikfest, Wolfstein, Germany",
-      ],
+      calendar_title: "Calendar",
+      calendar_upcoming_title: "Upcoming Dates:",
+      calendar_past_title: "Past Performances:",
+      calendar_dates_upcoming: "Dates for 2025 coming soon!",
+      calendar_dates_past: "Past Performances",
+      calendar_2024:
+        "22-24th February: Performance for Arte Documentary 'Bugatti Step', Leipzig, Germany\n\n18-24th March: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n28-30th March: Moha at Zirkus Mond, Berlin, Germany\n\n9-10th May: Lulu & Ah Bah Bravo! at KLP Festival, Mützingen, Germany\n\n17-19th May: Ah Bah Bravo! at KLP Festival, Güstritz, Germany\n\n15-16th June: Lulu & Ah Bah Bravo! at Gauklerfest, Germany\n\n23rd July: I become a dad! Of TWINS!!\n\n17th August: Lulu at Gute Laune Festival, Halle, Germany\n\n2nd of November: New WIP piece at Neue Bühne Friedrichshain, Berlin, Germany",
+      calendar_2023:
+        "February 1-5th: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n17-19th March: Lulu at Theaterforum Kreuzberg, Berlin, DE\n\n30th April: Ah Bah Bravo! at Bad Nenndorf, DE\n\n18-20th May: Ah Bah Bravo! at KLP Festival, DE\n\n23-25th May: Lulu at Brighton Fringe Festival, UK\n\n26-28th May: Ah Bah Bravo! at KLP Festival, DE\n\n29th May: Lulu at Freiburg Jongliere Convention, DE\n\n2-3rd June: Moha at Zirkus Mond, Berlin, DE\n\n10th June: Ah Bah Bravo! at Jahninselfest, Augsburg, DE\n\n9th July: Ah Bah Bravo! at Nikolaiveirtel, Berlin, DE",
+      calendar_2022:
+        "9-10 October - LULU at Villa Kuriosum, Berlin, Germany\n\n27 August - MOHA at Phoenix Fire Convention, Germany\n\n26 August - LULU at Parasola Festival, Klingelmühle, Germany (CANCELED)\n\n17 - 20 August - LULU & AH BAH BRAVO! at Festival d´Aurillac, France",
+      calendar_2021:
+        "03. December - LULU at Zirkusquartier, Zürich, Switzerland\n\n5. August - LULU at Sommermusikfest, Wolfstein, Germany",
     },
     fr: {
       hero_subtitle: "Cirque et mime contemporain",
@@ -64,23 +43,19 @@ export default defineI18nConfig(() => ({
       about_title: "À Propos",
       about:
         "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime.",
-      dates_past: "Performances passées",
-      "2024": [
-        "22-24 février : Performance pour le documentaire Arte 'Bugatti Step', Leipzig, Allemagne",
-        "18-24 mars : Lulu & Ah Bah Bravo! au Festival Kavc, Ljubljana, Slovénie",
-      ],
-      "2023": [
-        "1-5 février : Lulu & Ah Bah Bravo! au Festival Kavc, Ljubljana, Slovénie",
-        "17-19 mars : Lulu au Theaterforum Kreuzberg, Berlin, Allemagne",
-      ],
-      "2022": [
-        "9-10 octobre - LULU à Villa Kuriosum, Berlin, Allemagne",
-        "27 août - MOHA à Phoenix Fire Convention, Allemagne",
-      ],
-      "2021": [
-        "3 décembre - LULU à Zirkusquartier, Zürich, Suisse",
-        "5 août - LULU à Sommermusikfest, Wolfstein, Allemagne",
-      ],
+      calendar_title: "Calendrier",
+      calendar_upcoming_title: "Dates à venir :",
+      calendar_past_title: "Performances passées :",
+      calendar_dates_upcoming: "Les dates pour 2025 arrivent bientôt !",
+      calendar_dates_past: "Performances passées",
+      calendar_2024:
+        "22-24 février : Performance pour le documentaire Arte 'Bugatti Step', Leipzig, Allemagne\n\n18-24 mars : Lulu & Ah Bah Bravo ! au Kavc Festival, Ljubljana, Slovénie\n\n28-30 mars : Moha au Zirkus Mond, Berlin, Allemagne\n\n9-10 mai : Lulu & Ah Bah Bravo ! au KLP Festival, Mützingen, Allemagne\n\n17-19 mai : Ah Bah Bravo ! au KLP Festival, Güstritz, Allemagne\n\n15-16 juin : Lulu & Ah Bah Bravo ! au Gauklerfest, Allemagne\n\n23 juillet : Je deviens papa ! De JUMEAUX !!\n\n17 août : Lulu au Gute Laune Festival, Halle, Allemagne\n\n2 novembre : Nouvelle pièce WIP à la Neue Bühne Friedrichshain, Berlin, Allemagne",
+      calendar_2023:
+        "1-5 février : Lulu & Ah Bah Bravo ! au Kavc Festival, Ljubljana, Slovénie\n\n17-19 mars : Lulu au Theaterforum Kreuzberg, Berlin, Allemagne\n\n30 avril : Ah Bah Bravo ! à Bad Nenndorf, Allemagne\n\n18-20 mai : Ah Bah Bravo ! au KLP Festival, Allemagne\n\n23-25 mai : Lulu au Brighton Fringe Festival, Royaume-Uni\n\n26-28 mai : Ah Bah Bravo ! au KLP Festival, Allemagne\n\n29 mai : Lulu à la Freiburg Jongliere Convention, Allemagne\n\n2-3 juin : Moha au Zirkus Mond, Berlin, Allemagne\n\n10 juin : Ah Bah Bravo ! au Jahninselfest, Augsburg, Allemagne\n\n9 juillet : Ah Bah Bravo ! au Nikolaiviertel, Berlin, Allemagne",
+      calendar_2022:
+        "9-10 octobre : LULU à Villa Kuriosum, Berlin, Allemagne\n\n27 août : MOHA à la Phoenix Fire Convention, Allemagne\n\n26 août : LULU au Parasola Festival, Klingelmühle, Allemagne (ANNULÉ)\n\n17-20 août : LULU & AH BAH BRAVO ! au Festival d'Aurillac, France",
+      calendar_2021:
+        "3 décembre : LULU à Zirkusquartier, Zürich, Suisse\n\n5 août : LULU au Sommermusikfest, Wolfstein, Allemagne",
     },
   },
 }));
