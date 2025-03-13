@@ -53,6 +53,9 @@ export default defineI18nConfig(() => ({
       about_title: "À Propos",
       about:
         "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime.",
+      contact_title: "Contact",
+      contact_content:
+        "Vous pouvez m'écrire à info{'@'}philippeducasse.com. Je serais ravi d'entendre vos propositions de collaboration !",
       calendar_title: "Calendrier",
       calendar_upcoming_title: "Dates à venir :",
       calendar_past_title: "Performances passées :",
