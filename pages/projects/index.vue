@@ -4,7 +4,7 @@
   <div class="flex flex-col items-center p-4 text-left">
     <div class="flex flex-col lg:flex-row mt-10 md:mt-20 mb-5 gap-10 w-full max-w-6xl">
       <div class="flex flex-col justify-evenly flex-1">
-        <h2 class="text-center mb-6 md:mb-12">Lulu</h2>
+        <h2 class="text-left mb-6 md:mb-12">Lulu</h2>
         <p>{{ $t("lulu") }}</p>
       </div>
       <div class="relative w-full lg:w-[60%] max-w-4xl aspect-video">
@@ -23,7 +23,7 @@
 
     <div class="flex my-16 gap-10 flex-col w-full max-w-6xl lg:flex-row-reverse">
       <div class="flex flex-col justify-evenly flex-1">
-        <h2 class="text-center mb-6 md:mb-12">Ah Bah Bravo!</h2>
+        <h2 class="text-left mb-6 md:mb-12">Ah Bah Bravo!</h2>
         <p>{{ $t("abb") }}</p>
       </div>
       <div class="relative w-full lg:w-[60%] max-w-4xl aspect-video">
@@ -43,7 +43,7 @@
 
     <div class="flex mt-5 gap-10 flex-col lg:flex-row w-full max-w-6xl">
       <div class="flex flex-col justify-evenly flex-1">
-        <h2 class="text-center mb-6 md:mb-12">Stone and other pieces</h2>
+        <h2 class="text-left mb-6 md:mb-12">Stone and other pieces</h2>
         <p>{{ $t("stone") }}</p>
       </div>
       <div class="relative w-full lg:w-[60%] max-w-4xl aspect-video">

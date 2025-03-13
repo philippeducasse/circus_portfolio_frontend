@@ -7,7 +7,8 @@
       v-slot="{ item }"
       :items="items"
       :ui="{ item: 'basis-full' }"
-      class="w-72 md:w-1/2 mx-auto rounded-lg overflow-hidden"
+      class="w-full md:w-1/2 mx-auto rounded-lg overflow-hidden"
+      arrows
     >
       <img :src="item" draggable="false" class="w-full h-full" />
     </UCarousel>
@@ -26,17 +27,17 @@ const items = [
 
 const carouselRef = ref();
 
-onMounted(() => {
-  setInterval(() => {
-    if (!carouselRef.value) return;
+// onMounted(() => {
+//   setInterval(() => {
+//     if (!carouselRef.value) return;
 
-    if (carouselRef.value.page === carouselRef.value.pages) {
-      return carouselRef.value.select(0);
-    }
+//     if (carouselRef.value.page === carouselRef.value.pages) {
+//       return carouselRef.value.select(0);
+//     }
 
-    carouselRef.value.next();
-  }, 3000);
-});
+//     carouselRef.value.next();
+//   }, 3000);
+// });
 </script>
 
 <style scoped></style>

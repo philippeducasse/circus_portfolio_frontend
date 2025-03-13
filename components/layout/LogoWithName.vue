@@ -1,10 +1,10 @@
 <template>
   <ULink to="/">
     <img
-      src="../../public/img/logo_name.png"
+      src="../../public/img/philo.png"
       alt="philocircus logo"
-      width="200"
+      width="100"
       height="100"
-      class="-mb-5 mt-4 md:mt-0"
+      class="hidden md:block absolute l-4 t-4"
   /></ULink>
 </template>

@@ -3,6 +3,11 @@ export default defineI18nConfig(() => ({
   locale: "en",
   messages: {
     en: {
+      projects: "Projects",
+      calendar: "Calendar",
+      home: "Home",
+      support: "Support",
+      contact: "Contact",
       welcome: "Welcome",
       hero_subtitle: "Contemporary Circus and Mime",
       projects_header:
@@ -32,6 +37,11 @@ export default defineI18nConfig(() => ({
         "03. December - LULU at Zirkusquartier, Zürich, Switzerland\n\n5. August - LULU at Sommermusikfest, Wolfstein, Germany",
     },
     fr: {
+      projects: "Projets",
+      calendar: "Calendrier",
+      home: "Accueil",
+      support: "Soutien",
+      contact: "Contacte",
       hero_subtitle: "Cirque et mime contemporain",
       welcome: "Bienvenue",
       projects_header:
