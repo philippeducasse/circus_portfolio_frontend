@@ -5,6 +5,6 @@
       alt="philocircus logo"
       width="100"
       height="100"
-      class="hidden md:block absolute l-4 t-4"
+      class="hidden md:block absolute l-4 t-0"
   /></ULink>
 </template>
