@@ -1,5 +1,5 @@
 <template>
-  <div>Support</div>
+  <div class="px-5"></div>
 </template>
 
 <script setup lang="ts"></script>

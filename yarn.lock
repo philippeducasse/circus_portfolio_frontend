@@ -449,9 +449,9 @@
     vue-demi ">=0.13.0"
 
 "@iconify/collections@^1.0.526":
-  version "1.0.527"
-  resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.527.tgz#7dbb8e79998e66ffc58b43bcce708045aed345ff"
-  integrity sha512-K2T2DQCtINldeAWzlpWlUoLfQv83SvkmDj+TBlV1284iyLmw+Sq0vzeJ4Xljxhgnh2u4jxNs8QAUMebFK7HFEw==
+  version "1.0.528"
+  resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.528.tgz#616af869713a47335303cd1ec7f37539f10bca83"
+  integrity sha512-AfQ7FtDlLsMsv1y1nfJ1WBF6R0HdbNe+BmUZ2bmekNuOzv0z+TMNF02EFUunkH2zQ+NFAEL02O8hvMjHZhPLLA==
   dependencies:
     "@iconify/types" "*"
 
@@ -1675,10 +1675,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.21.2.tgz#dd57595a1773652bb6fb437e90a5f5386a49fd7e"
   integrity sha512-uvXk/U4cBiFMxt+p9/G7yUWI/UbHYbyghLCjlpWZ3mLeIZiUBSKcUnw9UnKkdRz7Z/N4UBuFLWQdJCjUe7HjvA==
 
-"@tanstack/virtual-core@3.13.3":
-  version "3.13.3"
-  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.13.3.tgz#7b6168e1f71ef317859b37672afa2a15a799d4d1"
-  integrity sha512-9kfCeSG6zUx1I1iF4RKZrquNog3Eho1T6+LyJEDYpHjNNdDlRhXyqzTod5u6LCEBSeG0f2txkNjAq0tFbCJ4bA==
+"@tanstack/virtual-core@3.13.4":
+  version "3.13.4"
+  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.13.4.tgz#31ac7710d102ed59463f922ab088dde5a9e62010"
+  integrity sha512-fNGO9fjjSLns87tlcto106enQQLycCKR4DPNpgq3djP5IdcPFdPAmaKjsgzIeRhH7hWrELgW12hYnRthS5kLUw==
 
 "@tanstack/vue-table@^8.21.2":
   version "8.21.2"
@@ -1688,11 +1688,11 @@
     "@tanstack/table-core" "8.21.2"
 
 "@tanstack/vue-virtual@^3.12.0":
-  version "3.13.3"
-  resolved "https://registry.yarnpkg.com/@tanstack/vue-virtual/-/vue-virtual-3.13.3.tgz#3f3bb41d8a2f01285c3408bc60c9ace7af97f264"
-  integrity sha512-YVRqUqftN4HA+UWohdmThpt0hHSXtVvSIBaqjbFdpPb1rslDHpqSRvgpSW8HJzFHSyyrl8ynZHKMQifMorU+uA==
+  version "3.13.4"
+  resolved "https://registry.yarnpkg.com/@tanstack/vue-virtual/-/vue-virtual-3.13.4.tgz#0e5e8b6ba03a9a5f27793b2b4325bc4a80b60ad3"
+  integrity sha512-1fPrd3hE1SS4R/9JbX1AlzueY4duCK7ixuLcMW5GMnk9N6WbLo9MioNKiv22V+UaXKOLNy8tLdzT8NYerOFTOQ==
   dependencies:
-    "@tanstack/virtual-core" "3.13.3"
+    "@tanstack/virtual-core" "3.13.4"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -1786,12 +1786,12 @@
     eslint-visitor-keys "^4.2.0"
 
 "@unhead/vue@^2.0.0-rc.10", "@unhead/vue@^2.0.0-rc.7":
-  version "2.0.0-rc.12"
-  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-2.0.0-rc.12.tgz#b3b1c3a96bb9e9b750e39195dc243bd88593ade6"
-  integrity sha512-/5RwnoXJLnTuwg4+PpQCQnnxtcN6S88cveTcXX42+siWRMYmivvO89ByTxYYm4RZwgfn7NNn9KbjnhIbF1QAUg==
+  version "2.0.0-rc.13"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-2.0.0-rc.13.tgz#2a7a874f37eedc064391518f48768572714f4f79"
+  integrity sha512-9jF2Y85HtEdxfaa6Y4wn2Gh1eXJHVNvvecWs3+qfEV83kSOFFowOpm6nIYmNpVGPQtnS0OW1JeIZjQEPZR+LAQ==
   dependencies:
     hookable "^5.5.3"
-    unhead "2.0.0-rc.12"
+    unhead "2.0.0-rc.13"
 
 "@vercel/nft@^0.29.2":
   version "0.29.2"
@@ -2829,9 +2829,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.5.73:
-  version "1.5.116"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.116.tgz#b779d73cd0cc75305d12ae4f061d7f7bcee4c761"
-  integrity sha512-mufxTCJzLBQVvSdZzX1s5YAuXsN1M4tTyYxOOL1TcSKtIzQ9rjIrm7yFK80rN5dwGTePgdoABDSHpuVtRQh0Zw==
+  version "1.5.118"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.118.tgz#064bda9bfea1611074288adb1fdd1f787a131e21"
+  integrity sha512-yNDUus0iultYyVoEFLnQeei7LOQkL8wg8GQpkPCRrOlJXlcCwa6eGKZkxQ9ciHsqZyYbj8Jd94X1CTPzGm+uIA==
 
 embla-carousel-auto-height@^8.5.2:
   version "8.5.2"
@@ -3333,9 +3333,9 @@ globby@^14.1.0:
     unicorn-magic "^0.3.0"
 
 google-fonts-helper@^3.5.0:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/google-fonts-helper/-/google-fonts-helper-3.7.2.tgz#4001beecef562fdb5e9c2e76ea0805f4a3fb4b00"
-  integrity sha512-ajRpqetmXIX190aEbZHcGtPOoL3JEwKa2vggNhhgxWo9oHMEgN8YZbhucay250XqknMeBko4HFZ+s6a8wvdDiw==
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/google-fonts-helper/-/google-fonts-helper-3.7.3.tgz#ea78e60a129c45f69fe09ffa84e28be9e3bb7ed0"
+  integrity sha512-dENZeK6RMvkCOFoKbLbS+pyoDgpmk4U6BYmfXnztMar2d8SjEG6valxql/Lkyi7bu5F+3FTdE+gAEYSYZ5zzMA==
   dependencies:
     deepmerge "^4.3.1"
     hookable "^5.5.3"
@@ -5518,10 +5518,10 @@ unenv@^2.0.0-rc.12, unenv@^2.0.0-rc.14:
     pathe "^2.0.3"
     ufo "^1.5.4"
 
-unhead@2.0.0-rc.12:
-  version "2.0.0-rc.12"
-  resolved "https://registry.yarnpkg.com/unhead/-/unhead-2.0.0-rc.12.tgz#a2ab2588e4cac3e3cf94fb1b3fc33dd089c73d80"
-  integrity sha512-4WOEkUQIp0r7r2P89Hxmcqh8cKhZnpWOFtJHSYIul3lEjXF1B4nD/3ULyqxAuUI5U07Bvs+6UPG/PdPaszBJUQ==
+unhead@2.0.0-rc.13:
+  version "2.0.0-rc.13"
+  resolved "https://registry.yarnpkg.com/unhead/-/unhead-2.0.0-rc.13.tgz#97f54a86823215ab8e511ed2edf21d7bb8fb2fb8"
+  integrity sha512-cuG4Uu6kS9/zF2+XL/5od6S1J4GJqm3xB/I6PVoXgqEVCKryziGdLo+uaqewgOWnv5y5kDRiSuRQz/7fh0nUfw==
   dependencies:
     hookable "^5.5.3"
 
@@ -5831,9 +5831,9 @@ vite-plugin-vue-tracer@^0.1.1:
     source-map-js "^1.2.1"
 
 "vite@^5.0.0 || ^6.0.0", vite@^6.1.1, vite@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.1.tgz#ae865d4bb93a11844be1bc647c8b2dd1856ea180"
-  integrity sha512-n2GnqDb6XPhlt9B8olZPrgMD/es/Nd1RdChF6CBD/fHW6pUyUTt2sQW2fPRX5GiD9XEa6+8A6A4f2vT6pSsE7Q==
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.2.tgz#8098b12a6bfd95abe39399aa7d5faa56545d7a1a"
+  integrity sha512-yW7PeMM+LkDzc7CgJuRLMW2Jz0FxMOsVJ8Lv3gpgW9WLcb9cTW+121UEr1hvmfR7w3SegR5ItvYyzVz1vxNJgQ==
   dependencies:
     esbuild "^0.25.0"
     postcss "^8.5.3"

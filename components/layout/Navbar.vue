@@ -21,7 +21,7 @@
 
     <div v-if="isMenuOpen" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-40" @click="closeMenu">
       <div class="flex flex-col absolute top-20 left-1/2 transform -translate-x-1/2 p-4 rounded shadow-lg">
-        <UNavigationMenu :items="verticalLinks" @click.stop orientation="vertical" />
+        <UNavigationMenu :items="verticalLinks" @click.stop orientation="vertical" class="text-center" />
       </div>
     </div>
   </UContainer>
@@ -63,6 +63,7 @@ const handleLanguageSelection = (lang: string) => {
 };
 
 const baseLinks = [
+  { label: t("home"), to: "/", onSelect: () => (isMenuOpen.value = false) },
   { label: t("projects"), to: "/projects", onSelect: () => (isMenuOpen.value = false) },
   { label: t("about_title"), to: "/about", onSelect: () => (isMenuOpen.value = false) },
   { label: t("contact"), to: "/contact", onSelect: () => (isMenuOpen.value = false) },

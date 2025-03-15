@@ -8,7 +8,7 @@
         v-slot="{ item }"
         :items="items"
         :ui="{ item: 'basis-full' }"
-        class="w-full md:w-1/2 mx-auto rounded-lg overflow-hidden"
+        class="w-full md:w-1/2 mx-auto rounded-lg"
         arrows
       >
         <img :src="item" draggable="false" class="w-full h-full" />
@@ -26,20 +26,6 @@ const items = [
   "https://picsum.photos/1920/1080?random=5",
   "https://picsum.photos/1920/1080?random=6",
 ];
-
-const carouselRef = ref();
-
-// onMounted(() => {
-//   setInterval(() => {
-//     if (!carouselRef.value) return;
-
-//     if (carouselRef.value.page === carouselRef.value.pages) {
-//       return carouselRef.value.select(0);
-//     }
-
-//     carouselRef.value.next();
-//   }, 3000);
-// });
 </script>
 
 <style scoped></style>

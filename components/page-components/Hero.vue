@@ -7,6 +7,8 @@
       :items="items"
       :ui="{ item: 'basis-full' }"
       class="w-72 md:w-2/3 mx-auto rounded-lg overflow-hidden"
+      :autoplay="{ delay: 2000 }"
+      loop
     >
       <img :src="item" draggable="false" class="w-full h-full" />
     </UCarousel>
@@ -15,10 +17,6 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  layout: false,
-});
-
 const items = [
   "https://picsum.photos/1920/1080?random=1",
   "https://picsum.photos/1920/1080?random=2",
@@ -27,20 +25,6 @@ const items = [
   "https://picsum.photos/1920/1080?random=5",
   "https://picsum.photos/1920/1080?random=6",
 ];
-
-const carouselRef = ref();
-
-onMounted(() => {
-  setInterval(() => {
-    if (!carouselRef.value) return;
-
-    if (carouselRef.value.page === carouselRef.value.pages) {
-      return carouselRef.value.select(0);
-    }
-
-    carouselRef.value.next();
-  }, 3000);
-});
 </script>
 
 <style scoped></style>
