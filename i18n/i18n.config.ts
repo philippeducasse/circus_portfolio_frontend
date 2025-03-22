@@ -35,6 +35,8 @@ export default defineI18nConfig(() => ({
         "9-10 October - LULU at Villa Kuriosum, Berlin, Germany\n\n27 August - MOHA at Phoenix Fire Convention, Germany\n\n26 August - LULU at Parasola Festival, Klingelmühle, Germany (CANCELED)\n\n17 - 20 August - LULU & AH BAH BRAVO! at Festival d´Aurillac, France",
       calendar_2021:
         "03. December - LULU at Zirkusquartier, Zürich, Switzerland\n\n5. August - LULU at Sommermusikfest, Wolfstein, Germany",
+      support_finance: "Financial Support",
+      support_artistic: "Artistic Support",
     },
     fr: {
       projects: "Projets",
@@ -69,6 +71,8 @@ export default defineI18nConfig(() => ({
         "9-10 octobre : LULU à Villa Kuriosum, Berlin, Allemagne\n\n27 août : MOHA à la Phoenix Fire Convention, Allemagne\n\n26 août : LULU au Parasola Festival, Klingelmühle, Allemagne (ANNULÉ)\n\n17-20 août : LULU & AH BAH BRAVO ! au Festival d'Aurillac, France",
       calendar_2021:
         "3 décembre : LULU à Zirkusquartier, Zürich, Suisse\n\n5 août : LULU au Sommermusikfest, Wolfstein, Allemagne",
+      support_finance: "Soutien financier",
+      support_artistic: "Soutien Artistique",
     },
   },
 }));
