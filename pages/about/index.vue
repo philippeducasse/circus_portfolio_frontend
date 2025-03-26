@@ -18,13 +18,13 @@
         :label="$t('full_screen')"
         @click="isModalOpen = true"
         variant="link"
-        class="absolute bottom-0 right-0 transition"
+        class="absolute bottom-0 right-46 transition"
       />
     </div>
     <Teleport to="#teleports">
       <div
         v-if="isModalOpen"
-        class="fixed inset-0 dark bg-opacity-80 flex justify-center items-center z-50 pointer-events-auto"
+        class="fixed inset-0 dark bg-(--ui-bg) flex justify-center items-center z-50 pointer-events-auto"
       >
         <UCarousel
           ref="carouselRef"
