@@ -1,7 +1,7 @@
 <template>
   <ULink to="/">
     <img
-      src="../../public/img/philo.png"
+      src="../../public/img/logos/philo.png"
       alt="philocircus logo"
       width="100"
       height="100"

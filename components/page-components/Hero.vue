@@ -9,6 +9,7 @@
       class="w-72 md:w-2/3 mx-auto rounded-lg overflow-hidden"
       :autoplay="{ delay: 2000 }"
       loop
+      auto-height
     >
       <img :src="item" draggable="false" class="w-full h-full" />
     </UCarousel>
@@ -18,12 +19,12 @@
 
 <script setup lang="ts">
 const items = [
-  "https://picsum.photos/1920/1080?random=1",
-  "https://picsum.photos/1920/1080?random=2",
-  "https://picsum.photos/1920/1080?random=3",
-  "https://picsum.photos/1920/1080?random=4",
-  "https://picsum.photos/1920/1080?random=5",
-  "https://picsum.photos/1920/1080?random=6",
+  "img/images/cropped-ABB2.jpg",
+  "img/images/cropped-staff3.jpg",
+  "img/images/cropped-ejc.jpg",
+  "img/images/cropped-foot.jpg",
+  "img/images/cropped-Amimi.jpg",
+  "img/images/cropped-spektakel.jpg",
 ];
 </script>
 

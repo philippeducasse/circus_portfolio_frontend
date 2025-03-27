@@ -37,6 +37,7 @@ export default defineI18nConfig(() => ({
         "03. December - LULU at Zirkusquartier, Zürich, Switzerland\n\n5. August - LULU at Sommermusikfest, Wolfstein, Germany",
       support_finance: "Financial Support",
       support_artistic: "Artistic Support",
+      full_screen: "View in full screen",
     },
     fr: {
       projects: "Projets",
@@ -73,6 +74,7 @@ export default defineI18nConfig(() => ({
         "3 décembre : LULU à Zirkusquartier, Zürich, Suisse\n\n5 août : LULU au Sommermusikfest, Wolfstein, Allemagne",
       support_finance: "Soutien financier",
       support_artistic: "Soutien Artistique",
+      full_screen: "Voir en plein écran",
     },
   },
 }));

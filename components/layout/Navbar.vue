@@ -13,7 +13,12 @@
       />
     </div>
     <div class="flex items-center justify-between w-full md:hidden place-content-center">
-      <img src="../../public/img/philo.png" width="60" class="mr-auto md:mt-0 -mb-16" alt="Philippe Ducasse logo" />
+      <img
+        src="../../public/img/logos/philo.png"
+        width="60"
+        class="mr-auto md:mt-0 -mb-16"
+        alt="Philippe Ducasse logo"
+      />
       <UButton @click="toggleMenu" class="my-4 z-50 flex items-center" color="primary">
         <Icon :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'" class="w-5 h-5 flex-grow-0" />
       </UButton>
@@ -62,17 +67,16 @@ const handleLanguageSelection = (lang: string) => {
   isLocaleDropdownOpen.value = false;
 };
 
-const baseLinks = [
+const baseLinks = computed(() => [
   { label: t("home"), to: "/", onSelect: () => (isMenuOpen.value = false) },
   { label: t("projects"), to: "/projects", onSelect: () => (isMenuOpen.value = false) },
   { label: t("about_title"), to: "/about", onSelect: () => (isMenuOpen.value = false) },
   { label: t("contact"), to: "/contact", onSelect: () => (isMenuOpen.value = false) },
   { label: t("calendar"), to: "/calendar", onSelect: () => (isMenuOpen.value = false) },
   { label: t("support"), to: "/support", onSelect: () => (isMenuOpen.value = false) },
-];
-
+]);
 const horizontalLinks = computed(() => [
-  ...baseLinks,
+  ...baseLinks.value,
   {
     label: currentLocale.value.toUpperCase(),
     click: () => toggleLocaleDropdown(),
@@ -88,11 +92,12 @@ const horizontalLinks = computed(() => [
 ]);
 
 const verticalLinks = computed(() => [
-  ...baseLinks,
+  ...baseLinks.value,
   {
     label: availableLocales.find((l) => l !== currentLocale.value)?.toUpperCase(),
     onSelect: () => handleLanguageSelection(availableLocales.find((l) => l !== currentLocale.value) || ""),
     class: "hover:cursor-pointer",
   },
 ]);
+console.log(baseLinks, horizontalLinks, verticalLinks);
 </script>
