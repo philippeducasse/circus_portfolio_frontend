@@ -44,7 +44,6 @@ const isLocaleDropdownOpen = ref(false);
 const { t } = useI18n();
 
 const availableLocales = ["en", "fr"];
-
 const currentLocale = computed(() => locale.value);
 
 const toggleMenu = () => {
