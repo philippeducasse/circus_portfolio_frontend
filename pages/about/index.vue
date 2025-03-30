@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4">
+  <div class="px-4 mb-16">
     <h2 class="pb-8 md:pb-16">{{ $t("about_title") }}</h2>
     <div class="flex flex-col md:flex-row md:gap-16 gap-y-10 items-center">
       <p class="flex-1 text-left">{{ $t("about") }}</p>
