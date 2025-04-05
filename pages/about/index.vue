@@ -79,7 +79,6 @@ const items = [
 ];
 
 const selectedImage = ref<undefined | string>(undefined);
-
 const openImage = (url: string) => {
   isModalOpen.value = true;
   selectedImage.value = url;
