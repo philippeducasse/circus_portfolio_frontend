@@ -4,12 +4,5 @@ export default defineAppConfig({
       primary: "blue",
       gray: "cool",
     },
-    button: {
-      color: {
-        primary: {
-          solid: "bg-red-500 hover:bg-red-400",
-        },
-      },
-    },
   },
 });
