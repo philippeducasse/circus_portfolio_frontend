@@ -99,5 +99,4 @@ onMounted(() => window.addEventListener("keyup", handleEscKey));
 
 onUnmounted(() => window.removeEventListener("keyup", handleEscKey));
 </script>
-
 <style scoped></style>
