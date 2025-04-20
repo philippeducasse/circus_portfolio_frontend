@@ -51,7 +51,7 @@
           class="absolute inset-0 w-full h-full"
           width="560"
           height="315"
-          src="https://www.youtube-nocookie.com/embed/9cfrJuHebWM?si=OsjYt2B87_LdDiao&amp;controls=0"
+          src="https://www.youtube.com/embed/9cfrJuHebWM?si=W3buOYupIrQM5P42"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
