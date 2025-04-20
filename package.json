@@ -23,7 +23,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
+    "@nuxtjs/i18n": "^8.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/youtube": "^0.1.0"
   },
