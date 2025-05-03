@@ -18,7 +18,7 @@ export default defineI18nConfig(() => ({
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
       about_title: "About",
       about:
-        "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. Growing up between Paris and Milan, Philippe was captivated by painting and music from an early age, and as a teenager quickly fell in love with dance and juggling. After obtaining a bachelor’s degree in psychology from the University of Exeter, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals including Usedom Kleinkunst Festival, International Storytelling Festival, Aurillac Festival, Fusion Festival, Brianza Juggling Convention, and others. Philippe is based in Berlin, where he also performs and teaches.",
+        "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. After obtaining a bachelor’s degree in psychology, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals. Philippe is based in Berlin (kinda), where he also performs and teaches. He is also a programmer, husband, and especially a father of two little twins.",
       contact_title: "Contact",
       contact_content:
         "You can write me at info{'@'}philippeducasse.com. I'm happy to hear about collaboartion proposals as well!",
@@ -44,7 +44,7 @@ export default defineI18nConfig(() => ({
       calendar: "Calendrier",
       home: "Accueil",
       support: "Soutien",
-      contact: "Contacte",
+      contact: "Contact",
       hero_subtitle: "Cirque et mime contemporain",
       welcome: "Bienvenue",
       projects_header:
@@ -55,7 +55,7 @@ export default defineI18nConfig(() => ({
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
       about_title: "À Propos",
       about:
-        "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime.",
+        "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime. Après des études en psychologie, il se forme dans le arts martiaux pendant 9 mois dans une école en Chine. Il complétera ensuite une formation de cirque contemporain Die Etage à Berlin, avec une spécialisation dans la manipulation d'objets. Philippe est aussi un développeur web, un mari, et surtout un papa de deux petites jumelles.",
       contact_title: "Contact",
       contact_content:
         "Vous pouvez m'écrire à info{'@'}philippeducasse.com. Je serais ravi d'entendre vos propositions de collaboration !",
