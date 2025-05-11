@@ -27,6 +27,8 @@ export default defineI18nConfig(() => ({
       calendar_past_title: "Past Performances:",
       calendar_dates_upcoming: "Dates for 2025 coming soon!",
       calendar_dates_past: "Past Performances",
+      calendar_2025:
+        "27-22th February: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n18th April: Lulu at Aichtal Juggling Convention, Aichtal, Germany\n\n4th May: Ah Bah Bravo! at Vielvalterei Festival, Altenmedingen, Germany\n\n11th May: Ah Bah Bravo! at Zirkus Mond, Berlin, Germany\n\n29th-31st May: Ah Bah Bravo! at Hut Festival, Chemitz, Germany\n\n28th June: Bunte Parade, Regensburg, Germany\n\n10-11th July: Ah Bah Bravo at Wiener Sommer Fest, Vienna, Austria\n\n26th July: Ah Bah Bravo! at strassen Theater im weitesten Sinne, Greifswald, Germany\n\n6th-7th September: Stone at Swiss Juggling Convention, Switzerland",
       calendar_2024:
         "22-24th February: Performance for Arte Documentary 'Bugatti Step', Leipzig, Germany\n\n18-24th March: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n28-30th March: Moha at Zirkus Mond, Berlin, Germany\n\n9-10th May: Lulu & Ah Bah Bravo! at KLP Festival, Mützingen, Germany\n\n17-19th May: Ah Bah Bravo! at KLP Festival, Güstritz, Germany\n\n15-16th June: Lulu & Ah Bah Bravo! at Gauklerfest, Germany\n\n23rd July: I become a dad! Of TWINS!!\n\n17th August: Lulu at Gute Laune Festival, Halle, Germany\n\n2nd of November: New WIP piece at Neue Bühne Friedrichshain, Berlin, Germany",
       calendar_2023:
@@ -64,6 +66,8 @@ export default defineI18nConfig(() => ({
       calendar_past_title: "Performances passées :",
       calendar_dates_upcoming: "Les dates pour 2025 arrivent bientôt !",
       calendar_dates_past: "Performances passées",
+      calendar_2025:
+        "27-22 février : Lulu & Ah Bah Bravo! au Kavc Festival, Ljubljana, Slovénie\n\n18 avril : Lulu à l’Aichtal Juggling Convention, Aichtal, Allemagne\n\n4 mai : Ah Bah Bravo! au Vielvalterei Festival, Altenmedingen, Allemagne\n\n11 mai : Ah Bah Bravo! au Zirkus Mond, Berlin, Allemagne\n\n29-31 mai : Ah Bah Bravo! au Hut Festival, Chemitz, Allemagne\n\n28 juin : Bunte Parade, Regensburg, Allemagne\n\n10-11 juillet : Ah Bah Bravo au Wiener Sommer Fest, Vienne, Autriche\n\n26 juillet : Ah Bah Bravo! au strassen Theater im weitesten Sinne, Greifswald, Allemagne\n\n6-7 septembre : Stone à la Swiss Juggling Convention, Suisse",
       calendar_2024:
         "22-24 février : Performance pour le documentaire Arte 'Bugatti Step', Leipzig, Allemagne\n\n18-24 mars : Lulu & Ah Bah Bravo ! au Kavc Festival, Ljubljana, Slovénie\n\n28-30 mars : Moha au Zirkus Mond, Berlin, Allemagne\n\n9-10 mai : Lulu & Ah Bah Bravo ! au KLP Festival, Mützingen, Allemagne\n\n17-19 mai : Ah Bah Bravo ! au KLP Festival, Güstritz, Allemagne\n\n15-16 juin : Lulu & Ah Bah Bravo ! au Gauklerfest, Allemagne\n\n23 juillet : Je deviens papa ! De JUMEAUX !!\n\n17 août : Lulu au Gute Laune Festival, Halle, Allemagne\n\n2 novembre : Nouvelle pièce WIP à la Neue Bühne Friedrichshain, Berlin, Allemagne",
       calendar_2023:
