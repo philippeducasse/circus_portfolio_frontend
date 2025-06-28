@@ -2,23 +2,13 @@
   <UContainer class="w-full flex items-center justify-evenly mt-4">
     <LogoWithName />
     <div class="hidden md:flex md:justify-evenly w-full">
-      <UNavigationMenu
-        :items="horizontalLinks"
-        class="w-fit relative"
-        arrow
-        content-orientation="vertical"
-        :ui="{
-          childList: 'w-fit cursor-pointer',
-        }"
-      />
+      <UNavigationMenu :items="horizontalLinks" class="w-fit relative" arrow content-orientation="vertical" :ui="{
+        childList: 'w-fit cursor-pointer',
+      }" />
     </div>
     <div class="flex items-center justify-between w-full md:hidden place-content-center">
-      <img
-        src="../../public/img/logos/philo.png"
-        width="60"
-        class="mr-auto md:mt-0 -mb-16"
-        alt="Philippe Ducasse logo"
-      />
+      <img src="../../public/img/logos/philo.png" width="60" class="mr-auto md:mt-0 -mb-16"
+        alt="Philippe Ducasse logo" />
       <UButton @click="toggleMenu" class="my-4 z-50 flex items-center" color="primary">
         <Icon :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'" class="w-5 h-5 flex-grow-0" />
       </UButton>
@@ -98,5 +88,4 @@ const verticalLinks = computed(() => [
     class: "hover:cursor-pointer",
   },
 ]);
-console.log(baseLinks, horizontalLinks, verticalLinks);
 </script>
