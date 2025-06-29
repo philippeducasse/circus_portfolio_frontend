@@ -4,38 +4,27 @@
     <!-- Upcoming -->
     <div class="flex flex-col md:gap-16 gap-y-10 pb-8 md:pb-16 text-left">
       <ul class="">
-       <li class="preformatted-text decoration-none">
+        <li class="preformatted-text decoration-none">
           <h3 class="my-8">{{ $t("calendar_upcoming_title") }}</h3>
           <p>{{ $t("calendar_2025") }}</p>
         </li>
       </ul>
-      <!--<p>{{ $t("calendar_dates_upcoming") }}</p> -->
     </div>
     <!-- past -->
     <div class="flex flex-col gap-y-10 text-left">
+
       <h3>{{ $t("calendar_past_title") }}</h3>
-      <ul class="">
-        <li class="preformatted-text">
-          <h3 class="mb-8">2024</h3>
-          <p>{{ $t("calendar_2024") }}</p>
-        </li>
-        <li class="preformatted-text">
-          <h3 class="my-8">2023</h3>
-          <p>{{ $t("calendar_2023") }}</p>
-        </li>
-        <li class="preformatted-text">
-          <h3 class="my-8">2022</h3>
-          <p>{{ $t("calendar_2022") }}</p>
-        </li>
-        <li class="preformatted-text">
-          <h3 class="my-8">2021</h3>
-          <p>{{ $t("calendar_2021") }}</p>
-        </li>
+      <ul v-for="year in years.reverse()" :key="year">
+        <CalendarYear :year="year" />
       </ul>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CalendarYear from '~/components/page-components/calendar/CalendarYear.vue';
+
+const years = [2021, 2022, 2023, 2024]
+</script>
 
 <style scoped></style>
