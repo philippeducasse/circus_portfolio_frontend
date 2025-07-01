@@ -4,7 +4,8 @@
     <ContentLayout>
       <slot />
     </ContentLayout>
-    <UButton class="mx-auto mb-5" size="md" label="Click!" @click="showToast" icon="i-lucide-rocket" />
+    <UButton class="absolute bottom-3 left-3 md:left-6" size="md" label="Click!" @click="showToast"
+      icon="i-lucide-rocket" />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ const toast = useToast()
 function showToast() {
   toast.add({
     title: 'Bravo!',
+    class: "text-center"
   })
 }
 
