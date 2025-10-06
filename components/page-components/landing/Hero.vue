@@ -11,7 +11,9 @@
 
 <script setup lang="ts">
 const items = [
+
   "/img/images/cropped-ABB2.jpg",
+  "/img/images/ABB3.jpg",
   "/img/images/cropped-staff3.jpg",
   "/img/images/cropped-ejc.jpg",
   "/img/images/cropped-foot.jpg",
