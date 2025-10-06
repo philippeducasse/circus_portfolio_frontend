@@ -10,7 +10,7 @@
     font-weight: 100;
   }
   h2 {
-    @apply text-3xl md:text-7xl;
+    @apply text-3xl md:text-5xl;
     font-family: "Amatic SC", sans-serif;
     font-weight: 100;
   }

@@ -4,8 +4,8 @@
     <ContentLayout>
       <slot />
     </ContentLayout>
-    <UButton class="absolute bottom-3 left-3 md:left-6" size="md" label="Click!" @click="showToast"
-      icon="i-lucide-rocket" />
+    <!-- <UButton class="absolute bottom-3 left-3 md:left-6" size="md" label="Click!" @click="showToast"
+      icon="i-lucide-rocket" /> -->
     <Footer />
   </div>
 </template>
