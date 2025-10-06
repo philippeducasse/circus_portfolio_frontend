@@ -21,4 +21,13 @@ export default defineNuxtConfig({
   ui: {
     fonts: true,
   },
+  devServer: {
+    host: "0.0.0.0", // listens on all servers
+    port: 3000,
+  },
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
 });

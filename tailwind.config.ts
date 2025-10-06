@@ -1,4 +1,3 @@
-import { plugins } from "#tailwind-config";
 import colors from "tailwindcss/colors";
 
 export default {

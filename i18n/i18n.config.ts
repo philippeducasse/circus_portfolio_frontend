@@ -16,9 +16,11 @@ export default defineI18nConfig(() => ({
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
       stone:
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
+      forgotten:
+        "A mesmirising and powerful piece, Forgotten explores the depths of minimalism using the contact ball.",
       about_title: "About",
       about:
-        "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. Growing up between Paris and Milan, Philippe was captivated by painting and music from an early age, and as a teenager quickly fell in love with dance and juggling. After obtaining a bachelor’s degree in psychology from the University of Exeter, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals including Usedom Kleinkunst Festival, International Storytelling Festival, Aurillac Festival, Fusion Festival, Brianza Juggling Convention, and others. Philippe is based in Berlin, where he also performs and teaches.",
+        "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. After obtaining a bachelor’s degree in psychology, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals. Philippe is based in Berlin (kinda), where he also performs and teaches. He is also a programmer, husband, and especially a father of two little twins.",
       contact_title: "Contact",
       contact_content:
         "You can write me at info{'@'}philippeducasse.com. I'm happy to hear about collaboartion proposals as well!",
@@ -27,6 +29,8 @@ export default defineI18nConfig(() => ({
       calendar_past_title: "Past Performances:",
       calendar_dates_upcoming: "Dates for 2025 coming soon!",
       calendar_dates_past: "Past Performances",
+      calendar_2025:
+        "27-22th February: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n18th April: Lulu at Aichtal Juggling Convention, Aichtal, Germany\n\n4th May: Ah Bah Bravo! at Vielvalterei Festival, Altenmedingen, Germany\n\n11th May: Ah Bah Bravo! at Zirkus Mond, Berlin, Germany\n\n29th-31st May: Ah Bah Bravo! at Hut Festival, Chemitz, Germany\n\n28th June: Bunte Parade, Regensburg, Germany\n\n10-11th July: Ah Bah Bravo at Wiener Sommer Fest, Vienna, Austria\n\n26th July: Ah Bah Bravo! at strassen Theater im weitesten Sinne, Greifswald, Germany\n\n6th-7th September: Stone at Swiss Juggling Convention, Switzerland",
       calendar_2024:
         "22-24th February: Performance for Arte Documentary 'Bugatti Step', Leipzig, Germany\n\n18-24th March: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n28-30th March: Moha at Zirkus Mond, Berlin, Germany\n\n9-10th May: Lulu & Ah Bah Bravo! at KLP Festival, Mützingen, Germany\n\n17-19th May: Ah Bah Bravo! at KLP Festival, Güstritz, Germany\n\n15-16th June: Lulu & Ah Bah Bravo! at Gauklerfest, Germany\n\n23rd July: I become a dad! Of TWINS!!\n\n17th August: Lulu at Gute Laune Festival, Halle, Germany\n\n2nd of November: New WIP piece at Neue Bühne Friedrichshain, Berlin, Germany",
       calendar_2023:
@@ -44,18 +48,20 @@ export default defineI18nConfig(() => ({
       calendar: "Calendrier",
       home: "Accueil",
       support: "Soutien",
-      contact: "Contacte",
+      contact: "Contact",
       hero_subtitle: "Cirque et mime contemporain",
       welcome: "Bienvenue",
       projects_header:
         "Les spectacles de Philippe mêlent cirque, théâtre et danse pour établir un lien avec le public sur divers sujets.",
       lulu: "Lulu est un spectacle de cirque contemporain de 45 minutes, créé et interprété par Philippe. Il raconte l'histoire d'un individu troublé qui cherche désespérément la solution à tous ses problèmes - 'Lulu'. Ce spectacle varié inclut du mime, de la manipulation d'objets, de l'acrobatie et de la danse, ainsi qu'une forte dose d'humour noir.",
       abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
+      forgotten:
+        "Pièce fascinante et puissante, Forgotten explore les profondeurs du minimalisme en utilisant la balle de contact.",
       stone:
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
       about_title: "À Propos",
       about:
-        "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime.",
+        "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime. Après des études en psychologie, il se forme dans le arts martiaux pendant 9 mois dans une école en Chine. Il complétera ensuite une formation de cirque contemporain Die Etage à Berlin, avec une spécialisation dans la manipulation d'objets. Philippe est aussi un développeur web, un mari, et surtout un papa de deux petites jumelles.",
       contact_title: "Contact",
       contact_content:
         "Vous pouvez m'écrire à info{'@'}philippeducasse.com. Je serais ravi d'entendre vos propositions de collaboration !",
@@ -64,6 +70,8 @@ export default defineI18nConfig(() => ({
       calendar_past_title: "Performances passées :",
       calendar_dates_upcoming: "Les dates pour 2025 arrivent bientôt !",
       calendar_dates_past: "Performances passées",
+      calendar_2025:
+        "27-22 février : Lulu & Ah Bah Bravo! au Kavc Festival, Ljubljana, Slovénie\n\n18 avril : Lulu à l’Aichtal Juggling Convention, Aichtal, Allemagne\n\n4 mai : Ah Bah Bravo! au Vielvalterei Festival, Altenmedingen, Allemagne\n\n11 mai : Ah Bah Bravo! au Zirkus Mond, Berlin, Allemagne\n\n29-31 mai : Ah Bah Bravo! au Hut Festival, Chemitz, Allemagne\n\n28 juin : Bunte Parade, Regensburg, Allemagne\n\n10-11 juillet : Ah Bah Bravo au Wiener Sommer Fest, Vienne, Autriche\n\n26 juillet : Ah Bah Bravo! au strassen Theater im weitesten Sinne, Greifswald, Allemagne\n\n6-7 septembre : Stone à la Swiss Juggling Convention, Suisse",
       calendar_2024:
         "22-24 février : Performance pour le documentaire Arte 'Bugatti Step', Leipzig, Allemagne\n\n18-24 mars : Lulu & Ah Bah Bravo ! au Kavc Festival, Ljubljana, Slovénie\n\n28-30 mars : Moha au Zirkus Mond, Berlin, Allemagne\n\n9-10 mai : Lulu & Ah Bah Bravo ! au KLP Festival, Mützingen, Allemagne\n\n17-19 mai : Ah Bah Bravo ! au KLP Festival, Güstritz, Allemagne\n\n15-16 juin : Lulu & Ah Bah Bravo ! au Gauklerfest, Allemagne\n\n23 juillet : Je deviens papa ! De JUMEAUX !!\n\n17 août : Lulu au Gute Laune Festival, Halle, Allemagne\n\n2 novembre : Nouvelle pièce WIP à la Neue Bühne Friedrichshain, Berlin, Allemagne",
       calendar_2023:
