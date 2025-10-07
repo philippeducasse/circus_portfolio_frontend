@@ -8,6 +8,8 @@
       icon="i-lucide-rocket" /> -->
     <Footer />
   </div>
+  <!-- <UButton class="absolute bottom-3 left-3 md:left-6" size="md" label="Click!" @click="showToast"
+    icon="i-lucide-rocket" /> -->
 </template>
 
 <script setup lang="ts">
