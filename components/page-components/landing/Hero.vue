@@ -12,13 +12,14 @@
 <script setup lang="ts">
 const items = [
 
-  "/img/images/cropped-ABB2.jpg",
-  "/img/images/ABB3.jpg",
-  "/img/images/cropped-staff3.jpg",
-  "/img/images/cropped-ejc.jpg",
-  "/img/images/cropped-foot.jpg",
-  "/img/images/cropped-Amimi.jpg",
-  "/img/images/cropped-spektakel.jpg",
+  "/img/images/cropped-ABB2.webp",
+  "/img/images/ABB3.webp",
+  "/img/images/ABB4.webp",
+  "/img/images/cropped-staff3.webp",
+  "/img/images/cropped-ejc.webp",
+  "/img/images/cropped-foot.webp",
+  "/img/images/cropped-Amimi.webp",
+  "/img/images/cropped-spektakel.webp",
 ];
 </script>
 

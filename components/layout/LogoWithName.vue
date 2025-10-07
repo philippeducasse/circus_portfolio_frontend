@@ -1,10 +1,10 @@
 <template>
-  <ULink to="/">
+  <ULink to="/" class="hidden md:block">
     <NuxtImg
-      src="../../public/img/logos/philo.png"
+      src="/img/logos/philo.png"
       alt="philocircus logo"
       width="100"
-      height="100"
-      class="hidden md:block absolute l-4 t-0"
+      height="150"
+      class="absolute l-4 t-0"
   /></ULink>
 </template>
