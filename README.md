@@ -23,3 +23,5 @@ yarn build
 pm2 restart philocircus || pm2 start yarn --name "philocircus" -- start
 
 ```
+
+# TODO: make build locally, deploy built image on vps
