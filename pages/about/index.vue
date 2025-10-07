@@ -11,7 +11,7 @@
           class="w-full mx-auto rounded-lg flex items-center place-items-center h-full"
           arrows
         >
-          <img
+          <NuxtImg
             :src="item"
             draggable="false"
             class="cursor-pointer object-contain max-h-[600px] w-auto my-auto"
@@ -41,7 +41,7 @@
             class="md:w-4/5 mx-auto rounded-lg flex items-center"
             arrows
           >
-            <img :src="item" draggable="false" class="object-contain h-full max-h-[600px] w-full" :alt="item" />
+            <NuxtImg :src="item" draggable="false" class="object-contain h-full max-h-[600px] w-full" :alt="item" />
           </UCarousel>
           <UButton @click="closeImage" label="&#x2715;" class="absolute -bottom-12 md:bottom-0 right-4 md:right-12" />
         </div>

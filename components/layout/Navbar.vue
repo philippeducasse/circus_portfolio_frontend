@@ -7,7 +7,7 @@
       }" />
     </div>
     <div class="flex items-center justify-between w-full md:hidden place-content-center">
-      <img src="../../public/img/logos/philo.png" width="60" class="mr-auto md:mt-0 -mb-16"
+      <NuxtImg src="../../public/img/logos/philo.png" width="60" class="mr-auto md:mt-0 -mb-16"
         alt="Philippe Ducasse logo" />
       <UButton @click="toggleMenu" class="my-4 z-50 flex items-center" color="primary">
         <Icon :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'" class="w-5 h-5 flex-grow-0" />

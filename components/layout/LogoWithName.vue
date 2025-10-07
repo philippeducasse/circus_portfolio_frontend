@@ -1,6 +1,6 @@
 <template>
   <ULink to="/">
-    <img
+    <NuxtImg
       src="../../public/img/logos/philo.png"
       alt="philocircus logo"
       width="100"
