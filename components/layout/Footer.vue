@@ -10,6 +10,9 @@
         <UIcon name="i-lucide-instagram" class="w-10 h-10" />
       </NuxtLink>
     </div>
+    <NuxtLink to="/dsvgo" class="">
+     <p class="text-gray-400 text-xs my-6">DSVGO</p> 
+    </NuxtLink>
   </UContainer>
 </template>
 
