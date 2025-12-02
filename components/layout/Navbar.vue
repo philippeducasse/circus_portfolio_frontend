@@ -3,7 +3,7 @@
     <LogoWithName />
     <div class="hidden md:flex md:justify-evenly w-full">
       <UNavigationMenu :items="horizontalLinks" class="w-fit relative" arrow content-orientation="vertical" :ui="{
-        childList: 'w-fit cursor-pointer',
+        childList: 'max-w-[300px] cursor-pointer',
       }" />
     </div>
     <div class="flex items-center justify-between w-full md:hidden place-content-center">
@@ -50,7 +50,7 @@ const toggleLocaleDropdown = () => {
   isLocaleDropdownOpen.value = !isLocaleDropdownOpen.value;
 };
 
-const handleLanguageSelection = (lang: string) => {
+const handleLanguageSelection = (lang: "en" | "fr") => {
   isMenuOpen.value = false;
   setLocale(lang);
   isLocaleDropdownOpen.value = false;
@@ -66,26 +66,26 @@ const baseLinks = computed(() => [
 ]);
 const horizontalLinks = computed(() => [
   ...baseLinks.value,
-  // {
-  //   label: currentLocale.value.toUpperCase(),
-  //   click: () => toggleLocaleDropdown(),
-  //   class: "hover:cursor-pointer",
-  //   children: availableLocales
-  //     .filter((l) => l !== currentLocale.value)
-  //     .map((lang) => ({
-  //       label: lang.toUpperCase(),
-  //       onSelect: () => handleLanguageSelection(lang),
-  //       class: "hover:cursor-pointer",
-  //     })),
-  // },
+  {
+    label: currentLocale.value.toUpperCase(),
+    click: () => toggleLocaleDropdown(),
+    class: "hover:cursor-pointer",
+    children: availableLocales
+      .filter((l) => l !== currentLocale.value)
+      .map((lang) => ({
+        label: lang.toUpperCase(),
+        onSelect: () => handleLanguageSelection(lang),
+        class: "hover:cursor-pointer",
+      })),
+  },
 ]);
 
 const verticalLinks = computed(() => [
   ...baseLinks.value,
-  // {
-  //   label: availableLocales.find((l) => l !== currentLocale.value)?.toUpperCase(),
-  //   onSelect: () => handleLanguageSelection(availableLocales.find((l) => l !== currentLocale.value) || ""),
-  //   class: "hover:cursor-pointer",
-  // },
+  {
+    label: availableLocales.find((l) => l !== currentLocale.value)?.toUpperCase(),
+    onSelect: () => handleLanguageSelection(availableLocales.find((l) => l !== currentLocale.value) || ""),
+    class: "hover:cursor-pointer",
+  },
 ]);
 </script>
