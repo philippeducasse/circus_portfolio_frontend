@@ -10,9 +10,13 @@ fi
 
 echo "✓ Build successful!"
 
-git checkout -B production
+# Create orphan branch (empty, no history)
+git checkout --orphan production
 
-# Force add build files (ignored in main branch)
+# Remove all tracked files from staging
+git rm -rf --cached .
+
+# Only add .output
 git add -f .output
 
 git commit -m "Build: $(date '+%Y-%m-%d %H:%M:%S')"
