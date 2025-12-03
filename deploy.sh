@@ -20,5 +20,6 @@ git push production main
 
 # Undo the commit locally (keep your main branch clean)
 git reset HEAD~1
+git checkout -- .output
 
 echo "✓ Deployment complete!"
