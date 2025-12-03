@@ -12,7 +12,7 @@ git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 git push production temp-deploy-branch:main --force
 
 # Clean up
-git checkout main
+git checkout -f main
 git branch -D temp-deploy-branch
 
 echo "✅ Deployment complete!"
