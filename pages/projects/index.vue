@@ -8,9 +8,9 @@
 <script setup lang="ts">
 import Project from '~/components/page-components/projects/Project.vue';
 const projects = [
-  { projectName: "Lulu", trailerUrl: "https://www.youtube-nocookie.com/embed/mRTKk2jQAa0?si=OsjYt2B87_LdDiao&amp;controls=0" },
-  { projectName: "Ah Bah Bravo!", trailerUrl: "https://www.youtube-nocookie.com/embed/nIY84br9loQ?si=npM5gFKiNW_ZUt-0&amp;controls=0" },
-  { projectName: "Stone", trailerUrl: "https://www.youtube-nocookie.com/embed/9cfrJuHebWM?si=r7n0j84CZaZhIeoV&amp;controls=0" },
-  { projectName: "Forgotten", trailerUrl: "https://www.youtube-nocookie.com/embed/_9mTJzKfU1s?si=cslwc5-YOwRxw53V&amp;controls=0" }
+  { projectName: "Lulu", videoId: "mRTKk2jQAa0" },
+  { projectName: "Ah Bah Bravo!", videoId: "nIY84br9loQ" },
+  { projectName: "Stone", videoId: "9cfrJuHebWM" },
+  { projectName: "Forgotten", videoId: "_9mTJzKfU1s" }
 ]
 </script>

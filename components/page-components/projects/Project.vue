@@ -8,19 +8,18 @@
 
     </div>
     <div class="relative w-screen self-end lg:w-[60%] max-w-4xl aspect-video">
-      <iframe class="absolute w-full h-full" width="560" height="315" :src=project.trailerUrl
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <YoutubeEmbedding :video-id="project.videoId" :title="project.projectName"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import YoutubeEmbedding from './YoutubeEmbedding.vue';
+
 const props = defineProps<{
   project: {
     projectName: string
-    trailerUrl: string
+    videoId: string
   }
   index: number
 }>()
