@@ -1,5 +1,10 @@
 # Deployment
 
+uses docker, builds the image through the deploy.yaml
+git push origin main:production
+
+# DEPRECATED
+
 ## run yarn deploy to trigger deployment
 
 The project is deployed onto a bare git folder on ~/git
