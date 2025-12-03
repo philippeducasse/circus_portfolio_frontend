@@ -1,18 +1,23 @@
 #!/bin/bash
+-e 
 
-# Create a temporary branch with build
-git checkout -b temp-deploy-branch
+echo "Building..."
 
-# Build and force-add output
-# yarn build
+# Create empty orphan branch
+git checkout --orphan temp-deploy-branch
+git rm -rf --cached .
+
+yarn build
+
+# Only add .output
 git add -f .output
 git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
-
-# Push only this branch
 git push production temp-deploy-branch:main --force
 
-# Clean up
+# Force switch back to main (ignore untracked files warning)
 git checkout -f main
+
+# Delete the temp branch
 git branch -D temp-deploy-branch
 
 echo "✅ Deployment complete!"
