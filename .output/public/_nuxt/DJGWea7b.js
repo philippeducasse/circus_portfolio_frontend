@@ -1,1 +1,0 @@
-import{_ as c,c as o,a as e,t as s,o as a}from"./-EaOWhaw.js";const n={},_={class:"flex flex-col gap-y-6"},r={class:"py-8 md:py-16"},l={class:"pb-8"};function i(t,d){return a(),o("div",_,[e("h2",r,s(t.$t("contact_title")),1),e("p",l,s(t.$t("contact_content")),1)])}const f=c(n,[["render",i]]);export{f as default};
