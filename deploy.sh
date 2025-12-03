@@ -1,21 +1,18 @@
 #!/bin/bash
-set -e
 
-echo "Building locally..."
-yarn build
+# Create a temporary branch with build
+git checkout -b temp-deploy-branch
 
-# Create a temp folder and clone the repo
-TMP_DIR=$(mktemp -d)
-git clone . "$TMP_DIR"
-
-cd "$TMP_DIR"
-
-# Copy build artifacts into the clone
-cp -r ../.output .
-
+# Build and force-add output
+# yarn build
 git add -f .output
 git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 
-git push production main
+# Push only this branch
+git push production temp-deploy-branch:main --force
 
-echo "✓ Deployment complete!"
+# Clean up
+git checkout main
+git branch -D temp-deploy-branch
+
+echo "✅ Deployment complete!"
