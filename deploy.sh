@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#deprecated: old version of deploying before docker
 set -e 
 
 echo "Building..."
