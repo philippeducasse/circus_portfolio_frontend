@@ -1,25 +1,21 @@
 #!/bin/bash
+set -e
 
 echo "Building locally..."
 yarn build
 
-if ! yarn build; then
-    echo "❌ Build failed!"
-    exit 1
-fi
+# Create a temp folder and clone the repo
+TMP_DIR=$(mktemp -d)
+git clone . "$TMP_DIR"
 
-echo "✓ Build successful!"
+cd "$TMP_DIR"
 
-# Force add .output (even though it's in .gitignore)
+# Copy build artifacts into the clone
+cp -r ../.output .
+
 git add -f .output
-
 git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 
-echo "Pushing to production..."
 git push production main
-
-# Undo the commit locally (keep your main branch clean)
-git reset HEAD~1
-git checkout -- .output
 
 echo "✓ Deployment complete!"
