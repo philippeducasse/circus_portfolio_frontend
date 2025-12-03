@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       { code: 'en', language: 'en-US' },
       { code: 'fr', language: 'fr-FR' }
     ],
-    defaultLocale: 'en',
+    strategy: "no_prefix"
   },
   ui: {
     fonts: true,
