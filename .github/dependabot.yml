@@ -1,8 +1,0 @@
-updates:
-  - package-ecosystem: "yarn"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    labels:
-      - "dependencies"
-      - "automerge"
