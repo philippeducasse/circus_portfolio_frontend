@@ -27,7 +27,7 @@ export default defineI18nConfig(() => ({
       calendar_title: "Calendar",
       calendar_upcoming_title: "Upcoming Dates:",
       calendar_past_title: "Past Performances:",
-      calendar_dates_upcoming: "Dates for 2025 coming soon!",
+      calendar_dates_upcoming: "Dates for 2026 coming soon!",
       calendar_dates_past: "Past Performances",
       calendar_2025:
         "27-22th February: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n18th April: Lulu at Aichtal Juggling Convention, Aichtal, Germany\n\n4th May: Ah Bah Bravo! at Vielvalterei Festival, Altenmedingen, Germany\n\n11th May: Ah Bah Bravo! at Zirkus Mond, Berlin, Germany\n\n29th-31st May: Ah Bah Bravo! at Hut Festival, Chemitz, Germany\n\n28th June: Bunte Parade, Regensburg, Germany\n\n10-11th July: Ah Bah Bravo at Wiener Sommer Fest, Vienna, Austria\n\n26th July: Ah Bah Bravo! at strassen Theater im weitesten Sinne, Greifswald, Germany\n\n6th-7th September: Stone at Swiss Juggling Convention, Switzerland",

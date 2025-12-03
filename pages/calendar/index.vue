@@ -6,7 +6,7 @@
       <ul class="">
         <li class="preformatted-text decoration-none">
           <h3 class="my-8">{{ $t("calendar_upcoming_title") }}</h3>
-          <p>{{ $t("calendar_2025") }}</p>
+          <p>{{ $t("calendar_dates_upcoming") }}</p>
         </li>
       </ul>
     </div>
@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import CalendarYear from '~/components/page-components/calendar/CalendarYear.vue';
 
-const years = [2021, 2022, 2023, 2024]
+const years = [2021, 2022, 2023, 2024, 2025]
 </script>
 
 <style scoped></style>
