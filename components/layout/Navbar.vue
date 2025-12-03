@@ -3,7 +3,8 @@
     <LogoWithName />
     <div class="hidden md:flex md:justify-evenly w-full">
       <UNavigationMenu :items="horizontalLinks" class="w-fit relative" arrow content-orientation="vertical" :ui="{
-        childList: 'max-w-[300px] cursor-pointer',
+        content: 'w-fit',
+        childList: 'cursor-pointer',
       }" />
     </div>
     <div class="flex items-center justify-between w-full md:hidden place-content-center">

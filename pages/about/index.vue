@@ -9,6 +9,7 @@
           v-slot="{ item }"
           :items="items"
           class="w-full mx-auto rounded-lg flex items-center place-items-center h-full"
+          :ui="{container:'items-center' }"
           arrows
         >
           <NuxtImg
@@ -37,7 +38,7 @@
             ref="carouselRef"
             v-slot="{ item }"
             :items="items"
-            :ui="{ item: 'basis-full' }"
+            :ui="{ item: 'basis-full',container:'place-items-center' }"
             class="md:w-4/5 mx-auto rounded-lg flex items-center"
             arrows
           >
