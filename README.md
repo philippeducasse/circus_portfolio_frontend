@@ -1,5 +1,7 @@
 # Deployment
 
+## run yarn deploy to trigger deployment
+
 The project is deployed onto a bare git folder on ~/git
 
 file: /home/ubuntu/git/hooks/post-receive
@@ -17,11 +19,8 @@ echo "Deploying to $TARGET_DIR..."
 # Checkout the latest code into the target dir
 git --work-tree=$TARGET_DIR --git-dir=$GIT_DIR checkout -f main
 cd $TARGET_DIR
-yarn install --production
-yarn build
 
-pm2 restart philocircus || pm2 start yarn --name "philocircus" -- start
+
+pm2 restart philocircus || pm2 start node --name "philocircus" -- .output/server/index.mjs # from memory
 
 ```
-
-# TODO: make build locally, deploy built image on vps
