@@ -12,6 +12,8 @@ export default defineI18nConfig(() => ({
       hero_subtitle: "Contemporary Circus and Mime",
       projects_header:
         "Philippe's performances blend circus, theatre, and dance to connect with audiences over a variety of topics.",
+      download_dossier: "Download dossier",
+      more_info: "See more",
       lulu: "Lulu is a 45-minute contemporary circus piece created and performed by Philippe. It tells the story of a troubled individual desperately searching for the solution to all of his problems - 'Lulu'. The varied piece includes mime, object manipulation, acrobatics, and dance - as well as strong use of dark humour.",
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
       stone:
@@ -53,6 +55,8 @@ export default defineI18nConfig(() => ({
       welcome: "Bienvenue",
       projects_header:
         "Les spectacles de Philippe mêlent cirque, théâtre et danse pour établir un lien avec le public sur divers sujets.",
+      download_dossier: "Télécharger le dossier",
+      more_info: "Voir plus",
       lulu: "Lulu est un spectacle de cirque contemporain de 45 minutes, créé et interprété par Philippe. Il raconte l'histoire d'un individu troublé qui cherche désespérément la solution à tous ses problèmes - 'Lulu'. Ce spectacle varié inclut du mime, de la manipulation d'objets, de l'acrobatie et de la danse, ainsi qu'une forte dose d'humour noir.",
       abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
       forgotten:
