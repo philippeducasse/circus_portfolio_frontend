@@ -8,14 +8,12 @@ RUN yarn install --frozen-lockfile
 
 COPY . .
 
-RUN yarn build
+RUN yarn generate
 
-FROM node:24-alpine AS production
+FROM nginx:alpine AS production
 
-WORKDIR /app
+COPY --from=build /app/.output/public /usr/share/nginx/html
 
-COPY --from=build /app/.output ./.output
+EXPOSE 80
 
-EXPOSE 3000
-
-CMD ["node", ".output/server/index.mjs"]
+CMD ["nginx", "-g", "daemon off;"]
