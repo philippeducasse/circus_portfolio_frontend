@@ -12,6 +12,8 @@ export default defineI18nConfig(() => ({
       hero_subtitle: "Contemporary Circus and Mime",
       projects_header:
         "Philippe's performances blend circus, theatre, and dance to connect with audiences over a variety of topics.",
+      download_dossier: "Download dossier",
+      more_info: "See more",
       lulu: "Lulu is a 45-minute contemporary circus piece created and performed by Philippe. It tells the story of a troubled individual desperately searching for the solution to all of his problems - 'Lulu'. The varied piece includes mime, object manipulation, acrobatics, and dance - as well as strong use of dark humour.",
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
       stone:
@@ -27,7 +29,7 @@ export default defineI18nConfig(() => ({
       calendar_title: "Calendar",
       calendar_upcoming_title: "Upcoming Dates:",
       calendar_past_title: "Past Performances:",
-      calendar_dates_upcoming: "Dates for 2025 coming soon!",
+      calendar_dates_upcoming: "Dates for 2026 coming soon!",
       calendar_dates_past: "Past Performances",
       calendar_2025:
         "27-22th February: Lulu & Ah Bah Bravo! at Kavc Festival, Ljubljana, Slovenia\n\n18th April: Lulu at Aichtal Juggling Convention, Aichtal, Germany\n\n4th May: Ah Bah Bravo! at Vielvalterei Festival, Altenmedingen, Germany\n\n11th May: Ah Bah Bravo! at Zirkus Mond, Berlin, Germany\n\n29th-31st May: Ah Bah Bravo! at Hut Festival, Chemitz, Germany\n\n28th June: Bunte Parade, Regensburg, Germany\n\n10-11th July: Ah Bah Bravo at Wiener Sommer Fest, Vienna, Austria\n\n26th July: Ah Bah Bravo! at strassen Theater im weitesten Sinne, Greifswald, Germany\n\n6th-7th September: Stone at Swiss Juggling Convention, Switzerland",
@@ -53,6 +55,8 @@ export default defineI18nConfig(() => ({
       welcome: "Bienvenue",
       projects_header:
         "Les spectacles de Philippe mêlent cirque, théâtre et danse pour établir un lien avec le public sur divers sujets.",
+      download_dossier: "Télécharger le dossier",
+      more_info: "Voir plus",
       lulu: "Lulu est un spectacle de cirque contemporain de 45 minutes, créé et interprété par Philippe. Il raconte l'histoire d'un individu troublé qui cherche désespérément la solution à tous ses problèmes - 'Lulu'. Ce spectacle varié inclut du mime, de la manipulation d'objets, de l'acrobatie et de la danse, ainsi qu'une forte dose d'humour noir.",
       abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
       forgotten:

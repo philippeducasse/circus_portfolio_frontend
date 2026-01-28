@@ -16,7 +16,11 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    vueI18n: "./i18n.config.ts",
+       locales: [
+      { code: 'en', language: 'en-US' },
+      { code: 'fr', language: 'fr-FR' }
+    ],
+    strategy: "no_prefix"
   },
   ui: {
     fonts: true,
@@ -27,6 +31,13 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: "Philippe Ducasse - Contemporary Circus Artist",
+      htmlAttrs: {
+        lang: "en",
+      },
+      meta: [
+        { name: "description", content: "Philippe Ducasse is a contemporary circus artist specializing in contact staff and contact ball juggling, mime, and theatrical performance. Based in Berlin." },
+      ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
