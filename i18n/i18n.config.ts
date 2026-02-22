@@ -8,6 +8,7 @@ export default defineI18nConfig(() => ({
       home: "Home",
       support: "Support",
       contact: "Contact",
+      reviews: "Reviews",
       welcome: "Welcome",
       hero_subtitle: "Contemporary Circus and Mime",
       projects_header:
@@ -20,6 +21,11 @@ export default defineI18nConfig(() => ({
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
       forgotten:
         "A mesmirising and powerful piece, Forgotten explores the depths of minimalism using the contact ball.",
+      length: "Length",
+      stage: "Preferred stage",
+      indoor: "Indoor",
+      outdoor: "Outdoor",
+      flexible: "Flexible",
       about_title: "About",
       about:
         "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. After obtaining a bachelor’s degree in psychology, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals. Philippe is based in Berlin (kinda), where he also performs and teaches. He is also a programmer, husband, and especially a father of two little twins.",
@@ -44,6 +50,12 @@ export default defineI18nConfig(() => ({
       support_finance: "Financial Support",
       support_artistic: "Artistic Support",
       full_screen: "View in full screen",
+      formTitle: "Leave a Review",
+      yourName: "Your name",
+      yourMessage: "Your message",
+      show: "Show",
+      selectShow: "Select a show",
+      submitComment: "Submit",
     },
     fr: {
       projects: "Projets",
@@ -51,6 +63,7 @@ export default defineI18nConfig(() => ({
       home: "Accueil",
       support: "Soutien",
       contact: "Contact",
+      reviews: "Avis",
       hero_subtitle: "Cirque et mime contemporain",
       welcome: "Bienvenue",
       projects_header:
@@ -63,6 +76,11 @@ export default defineI18nConfig(() => ({
         "Pièce fascinante et puissante, Forgotten explore les profondeurs du minimalisme en utilisant la balle de contact.",
       stone:
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
+      length: "Durée",
+      stage: "Préférence de scène",
+      indoor: "intérieur",
+      outdoor: "extérieur",
+      flexible: "flexible",
       about_title: "À Propos",
       about:
         "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime. Après des études en psychologie, il se forme dans le arts martiaux pendant 9 mois dans une école en Chine. Il complétera ensuite une formation de cirque contemporain Die Etage à Berlin, avec une spécialisation dans la manipulation d'objets. Philippe est aussi un développeur web, un mari, et surtout un papa de deux petites jumelles.",
@@ -87,6 +105,12 @@ export default defineI18nConfig(() => ({
       support_finance: "Soutien financier",
       support_artistic: "Soutien Artistique",
       full_screen: "Voir en plein écran",
+      formTitle: "Laisser un avis",
+      yourName: "Votre nom",
+      yourMessage: "Votre message",
+      show: "Spectacle",
+      selectShow: "Choisir un spectacle",
+      submitComment: "Envoyer",
     },
   },
 }));

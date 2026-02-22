@@ -13,14 +13,13 @@
 </template>
 
 <script setup lang="ts">
-
-const toast = useToast()
+const toast = useToast();
 
 function showToast() {
   toast.add({
-    title: 'Bravo!',
-    class: "text-center"
-  })
+    title: "Bravo!",
+    class: "text-center",
+  });
 }
 
 import Navbar from "~/components/layout/Navbar.vue";

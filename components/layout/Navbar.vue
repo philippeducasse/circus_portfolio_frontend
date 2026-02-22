@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="w-full flex items-center justify-evenly mt-4">
+  <UContainer class="w-full flex items-center justify-evenly mt-4 z-1000">
     <LogoWithName />
     <div class="hidden md:flex md:justify-evenly w-full">
       <UNavigationMenu
@@ -20,12 +20,6 @@
         class="mr-auto md:mt-0"
         alt="Philippe Ducasse logo"
       />
-      <!-- <NuxtImg
-        src="/img/logos/philo.png"
-        width="30"
-        class="mr-auto md:mt-0"
-        alt="Philippe Ducasse logo"
-      /> -->
       <UButton @click="toggleMenu" class="my-4 z-50 flex items-center" color="primary">
         <Icon
           :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'"
@@ -50,6 +44,15 @@
         />
       </div>
     </div>
+    <UButton variant="soft" @click="openModal">{{ $t("formTitle") }} !</UButton>
+    <Teleport to="#teleports">
+      <div
+        v-if="isModalOpen"
+        class="fixed inset-0 dark bg-(--ui-bg) flex justify-center items-center z-50 pointer-events-auto"
+      >
+        <CommentForm />
+      </div>
+    </Teleport>
   </UContainer>
 </template>
 
@@ -58,9 +61,11 @@ import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import LogoWithName from "./LogoWithName.vue";
 import { UNavigationMenu } from "#components";
+import CommentForm from "../page-components/reviews/CommentForm.vue";
 
 const { locale, setLocale } = useI18n();
 const isMenuOpen = ref(false);
+const isModalOpen = ref(false);
 const isLocaleDropdownOpen = ref(false);
 const { t } = useI18n();
 
@@ -71,6 +76,10 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
+const openModal = () => {
+  console.log("opening modal");
+  isModalOpen.value = true;
+};
 const closeMenu = (event: Event) => {
   if (!event?.target?.closest(".absolute")) {
     isMenuOpen.value = false;
@@ -94,6 +103,7 @@ const baseLinks = computed(() => [
   { label: t("contact"), to: "/contact", onSelect: () => (isMenuOpen.value = false) },
   { label: t("calendar"), to: "/calendar", onSelect: () => (isMenuOpen.value = false) },
   { label: t("support"), to: "/support", onSelect: () => (isMenuOpen.value = false) },
+  { label: t("reviews"), to: "/reviews", onSelect: () => (isMenuOpen.value = false) },
 ]);
 const horizontalLinks = computed(() => [
   ...baseLinks.value,
