@@ -13,9 +13,9 @@
 </template>
 <script setup lang="ts">
 import { useProjects } from "~/composables/useProjects";
+import Project from "~/components/page-components/projects/Project.vue";
 
 const { projects } = useProjects();
-
 const handleToggleDetails = (projectId: number) => {
   projects.value = projects.value.map((project) => {
     if (project.projectId === projectId) {

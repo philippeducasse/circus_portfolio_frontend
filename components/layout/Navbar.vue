@@ -44,7 +44,7 @@
         />
       </div>
     </div>
-    <UButton variant="soft" @click="openModal">{{ $t("formTitle") }} !</UButton>
+    <!-- <UButton variant="soft" @click="openModal">{{ $t("formTitle") }} !</UButton>
     <Teleport to="#teleports">
       <div
         v-if="isModalOpen"
@@ -52,7 +52,7 @@
       >
         <CommentForm />
       </div>
-    </Teleport>
+    </Teleport> -->
   </UContainer>
 </template>
 
