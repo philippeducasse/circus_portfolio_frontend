@@ -103,7 +103,7 @@ const baseLinks = computed(() => [
   { label: t("contact"), to: "/contact", onSelect: () => (isMenuOpen.value = false) },
   { label: t("calendar"), to: "/calendar", onSelect: () => (isMenuOpen.value = false) },
   { label: t("support"), to: "/support", onSelect: () => (isMenuOpen.value = false) },
-  { label: t("reviews"), to: "/reviews", onSelect: () => (isMenuOpen.value = false) },
+  // { label: t("reviews"), to: "/reviews", onSelect: () => (isMenuOpen.value = false) },
 ]);
 const horizontalLinks = computed(() => [
   ...baseLinks.value,
