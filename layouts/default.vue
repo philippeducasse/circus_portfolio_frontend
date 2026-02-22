@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col min-h-screen self-stretch">
-    <Navbar />
+    <div class="relative z-[60]">
+      <Navbar />
+    </div>
     <ContentLayout>
       <slot />
     </ContentLayout>
