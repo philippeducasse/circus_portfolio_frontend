@@ -14,9 +14,22 @@
     </UCarousel>
     <h2>{{ $t("hero_subtitle") }}</h2>
   </div>
+  <h2 class="text-center py-8 px-4 mt-8 md:mt-16">{{ $t("projects") }}</h2>
+  <div class="flex flex-col items-center mt-4 mb-4 text-left">
+    <ProjectOverview
+      v-for="(project, index) in projects"
+      :key="project.title"
+      :project="project"
+      :index="index"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
+import ProjectOverview from "~/components/page-components/projects/ProjectOverview.vue";
+
+const { projects } = useProjects();
+
 const items = [
   { src: "/img/images/ABB3.webp", alt: "Philippe in Ah Bah Bravo show" },
   { src: "/img/images/cropped-ABB2.webp", alt: "Philippe performing Ah Bah Bravo" },

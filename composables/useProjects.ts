@@ -1,18 +1,16 @@
 export const useProjects = () => {
   const projects = ref([
     {
-      projectTitle: "Lulu",
-      projectId: 1,
+      title: "Lulu",
+      id: 1,
       videoId: "mRTKk2jQAa0",
       dossierPath: "/dossiers/Dossier_Lulu_2026-en.pdf",
-      showDetails: false,
       length: "45-60",
       stage: "indoor",
     },
     {
-      projectTitle: "Ah Bah Bravo!",
-      showDetails: false,
-      projectId: 2,
+      title: "Ah Bah Bravo!",
+      id: 2,
       videoId: "nIY84br9loQ",
       dossierPath: "/dossiers/AhBahBravo_2026_compressed.pdf",
       length: "25",
@@ -20,18 +18,16 @@ export const useProjects = () => {
     },
 
     {
-      projectTitle: "Stone",
+      title: "Stone",
       videoId: "9cfrJuHebWM",
-      projectId: 3,
-      showDetails: false,
+      id: 3,
       length: "5",
       stage: "flexible",
     },
     {
-      projectTitle: "Forgotten",
+      title: "Forgotten",
       videoId: "_9mTJzKfU1s",
-      projectId: 4,
-      showDetails: false,
+      id: 4,
       length: "5",
       stage: "indoor",
     },

@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <div class="" v-for="comment in comments">This is a comment</div>
+  <div>
+    <div v-for="comment in comments">This is a comment</div>
   </div>
 </template>
 

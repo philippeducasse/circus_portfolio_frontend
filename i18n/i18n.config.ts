@@ -16,11 +16,17 @@ export default defineI18nConfig(() => ({
       download_dossier: "Download dossier",
       more_info: "See more",
       lulu: "Lulu is a 45-minute contemporary circus piece created and performed by Philippe. It tells the story of a troubled individual desperately searching for the solution to all of his problems - 'Lulu'. The varied piece includes mime, object manipulation, acrobatics, and dance - as well as strong use of dark humour.",
+      lulu_short:
+        "A wild and emotional psychedlic journey, where contemporary mime and object manipulation blur the lines between fantasy and reality. Includes invisible bongs and mild twerking.",
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
+      abb_short:
+        "A celebration of the joy of life, with flamming staffs in a handstand and gravity defying butt-hooping ",
       stone:
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
+      stone_short: "A powerful exploration of technical virtuosity with the contact staff",
       forgotten:
         "A mesmirising and powerful piece, Forgotten explores the depths of minimalism using the contact ball.",
+      forgotten_short: "An exploration of the depths of minimalism using the contact ball.",
       length: "Length",
       stage: "Preferred stage",
       indoor: "Indoor",
@@ -71,11 +77,18 @@ export default defineI18nConfig(() => ({
       download_dossier: "Télécharger le dossier",
       more_info: "Voir plus",
       lulu: "Lulu est un spectacle de cirque contemporain de 45 minutes, créé et interprété par Philippe. Il raconte l'histoire d'un individu troublé qui cherche désespérément la solution à tous ses problèmes - 'Lulu'. Ce spectacle varié inclut du mime, de la manipulation d'objets, de l'acrobatie et de la danse, ainsi qu'une forte dose d'humour noir.",
+      lulu_short:
+        "Un voyage psychédélique sauvage et émotionnel, où le mime et la manipulation d'objets brouillent les frontières entre fantasme et réalité. Avec des bongs invisibles et du twerking discret.",
       abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
+      abb_short:
+        "Une célébration de la joie de vivre, avec des bâtons enflammés en équilibre sur les mains et du hulahoop sur les fesses défiant la gravité.",
       forgotten:
         "Pièce fascinante et puissante, Forgotten explore les profondeurs du minimalisme en utilisant la balle de contact.",
+      forgotten_short:
+        "Une plongée dans les profondeurs du minimalisme à travers l'utilisation de la balle de contact.",
       stone:
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
+      stone_short: "Une exploration puissante de la virtuosité technique avec le bâton de contact.",
       length: "Durée",
       stage: "Préférence de scène",
       indoor: "intérieur",
