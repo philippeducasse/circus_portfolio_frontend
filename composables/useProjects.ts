@@ -15,10 +15,17 @@ export const useProjects = () => {
         {
           src: "/img/images/lulu_stare.webp",
           alt: "artist staring intently",
+          class: "row-span-2 !aspect-auto h-full",
         },
         {
           src: "/img/images/lulu_smoke.webp",
           alt: "Mime blowing out smoke",
+          class: "row-span-2 !aspect-auto h-full",
+        },
+        {
+          src: "/img/images/ejc2.webp",
+          alt: "artist with staff",
+          class: "!object-center",
         },
       ],
     },
@@ -33,6 +40,7 @@ export const useProjects = () => {
         {
           src: "/img/images/ABB5.webp",
           alt: "Artist with hulahoop",
+          class: "row-span-2 !aspect-auto h-full",
         },
         {
           src: "/img/images/ABB7.webp",
@@ -41,6 +49,7 @@ export const useProjects = () => {
         {
           src: "/img/images/ABB8.webp",
           alt: "Street artist interacting with audience",
+          class: "row-span-2 !aspect-auto h-full",
         },
         {
           src: "/img/images/ABB4.webp",

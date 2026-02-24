@@ -1,6 +1,6 @@
 <template>
-  <h2 class="text-center py-8 px-4">{{ $t("projects_header") }}</h2>
-
+  <h2 class="text-center py-8 px-4">{{ $t("projects") }}</h2>
+  <h3 class="text-center py-8 px-4">{{ $t("projects_header") }}</h3>
   <div class="flex flex-col items-center mt-4 mb-4 text-left">
     <ProjectDetailView
       v-for="(project, index) in projects"
