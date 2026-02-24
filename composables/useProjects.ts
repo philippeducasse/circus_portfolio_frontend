@@ -7,6 +7,20 @@ export const useProjects = () => {
       dossierPath: "/dossiers/Dossier_Lulu_2026-en.pdf",
       length: "45-60",
       stage: "indoor",
+      images: [
+        {
+          src: "/img/images/cropped-ejc.webp",
+          alt: "artist with staff",
+        },
+        {
+          src: "/img/images/lulu_stare.webp",
+          alt: "artist staring intently",
+        },
+        {
+          src: "/img/images/lulu_smoke.webp",
+          alt: "Mime blowing out smoke",
+        },
+      ],
     },
     {
       title: "Ah Bah Bravo!",
@@ -15,6 +29,24 @@ export const useProjects = () => {
       dossierPath: "/dossiers/AhBahBravo_2026_compressed.pdf",
       length: "25",
       stage: "outdoor",
+      images: [
+        {
+          src: "/img/images/ABB5.webp",
+          alt: "Artist with hulahoop",
+        },
+        {
+          src: "/img/images/ABB7.webp",
+          alt: "Street artist",
+        },
+        {
+          src: "/img/images/ABB8.webp",
+          alt: "Street artist interacting with audience",
+        },
+        {
+          src: "/img/images/ABB4.webp",
+          alt: "Artist putting on tie",
+        },
+      ],
     },
 
     {
