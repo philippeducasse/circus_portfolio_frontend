@@ -9,7 +9,7 @@
           v-slot="{ item }"
           :items="items"
           class="w-full mx-auto rounded-lg flex items-center place-items-center h-full"
-          :ui="{container:'items-center' }"
+          :ui="{ container: 'items-center' }"
           arrows
         >
           <NuxtImg
@@ -38,13 +38,22 @@
             ref="carouselRef"
             v-slot="{ item }"
             :items="items"
-            :ui="{ item: 'basis-full',container:'place-items-center' }"
+            :ui="{ item: 'basis-full', container: 'items-center' }"
             class="md:w-4/5 mx-auto rounded-lg flex items-center"
             arrows
           >
-            <NuxtImg :src="item" draggable="false" class="object-contain h-full max-h-[600px] w-full" :alt="item" />
+            <NuxtImg
+              :src="item"
+              draggable="false"
+              class="object-contain h-full max-h-[600px] w-full"
+              :alt="item"
+            />
           </UCarousel>
-          <UButton @click="closeImage" label="&#x2715;" class="absolute -bottom-12 md:bottom-0 right-4 md:right-12" />
+          <UButton
+            @click="closeImage"
+            label="&#x2715;"
+            class="absolute -bottom-12 md:bottom-0 right-4 md:right-12"
+          />
         </div>
       </div>
     </Teleport>
@@ -55,28 +64,29 @@
 import { UButton } from "#components";
 
 const items = [
-  "img/images/ABB5.webp",
   "img/images/ABB2.webp",
+  "img/images/ABB3.webp",
+  "img/images/ABB4.webp",
+  "img/images/ABB5.webp",
+  "img/images/ABB6.webp",
+  "img/images/ABB7.webp",
+  "img/images/ABB8.webp",
   "img/images/Amimi.webp",
-  // "img/images/ball.webp",
-  // "img/images/ball2.webp",
   "img/images/ejc.webp",
   "img/images/ejc2.webp",
   "img/images/ejc3.webp",
-  // "img/images/foot.webp",
   "img/images/fusion.webp",
+  "img/images/hs.webp",
   "img/images/hs_ejc.webp",
-  // "img/images/hs.webp",
   "img/images/kaos.webp",
   "img/images/lulu.webp",
+  "img/images/lulu_smoke.webp",
+  "img/images/lulu_stare.webp",
   "img/images/maranam.webp",
   "img/images/maranam2.webp",
   "img/images/philo_rolli.webp",
   "img/images/snowlulu2.webp",
   "img/images/spektakel.webp",
-  // "img/images/staff.webp",
-  // "img/images/staff2.webp",
-  // "img/images/staff3.webp",
 ];
 
 const selectedImage = ref<undefined | string>(undefined);
