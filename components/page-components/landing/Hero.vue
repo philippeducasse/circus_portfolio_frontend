@@ -14,6 +14,7 @@
     </UCarousel>
     <h2>{{ $t("hero_subtitle") }}</h2>
   </div>
+  <hr class="w-full max-w-6xl border-t border-white/10 mt-20" />
   <h2 class="text-center py-8 px-4 mt-8 md:mt-16">{{ $t("projects") }}</h2>
   <div class="flex flex-col items-center mt-4 mb-4 text-left">
     <ProjectOverview
