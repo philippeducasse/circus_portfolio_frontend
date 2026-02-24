@@ -1,4 +1,5 @@
 <template>
+  <hr v-if="index > 0" class="w-full max-w-6xl border-t border-white/10 mt-20" />
   <div :class="containerClass">
     <div class="flex flex-col justify-evenly flex-1 md:p-0 p-4">
       <h2 class="text-left mb-6 md:mb-12">{{ project.title }}</h2>
@@ -35,8 +36,8 @@ const props = defineProps<{
 
 const containerClass = computed(() =>
   props.index % 2 === 1
-    ? "flex flex-col lg:flex-row-reverse mt-10 md:mt-20 mb-24 gap-10 w-full max-w-6xl"
-    : "flex flex-col lg:flex-row mt-10 md:mt-20 mb-24 gap-10 w-full max-w-6xl",
+    ? "flex flex-col lg:flex-row-reverse mt-10 md:mt-20 gap-10 w-full max-w-6xl"
+    : "flex flex-col lg:flex-row mt-10 md:mt-20 gap-10 w-full max-w-6xl",
 );
 </script>
 
