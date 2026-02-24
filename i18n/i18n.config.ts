@@ -85,7 +85,7 @@ export default defineI18nConfig(() => ({
       forgotten:
         "Pièce fascinante et puissante, Forgotten explore les profondeurs du minimalisme en utilisant la balle de contact.",
       forgotten_short:
-        "Une plongée dans les profondeurs du minimalisme à travers l'utilisation de la balle de contact.",
+        "Une plongée dans les profondeurs du minimalisme à travers la manipulation de la balle de contact.",
       stone:
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
       stone_short: "Une exploration puissante de la virtuosité technique avec le bâton de contact.",
