@@ -1,7 +1,7 @@
 <template>
   <UContainer class="w-full flex items-center justify-evenly mt-4 z-1000">
     <LogoWithName />
-    <div class="hidden md:flex md:justify-evenly w-full">
+    <div class="hidden md:flex md:justify-evenly w-full h-full">
       <UNavigationMenu
         :items="horizontalLinks"
         class="w-fit relative"
@@ -33,14 +33,15 @@
       class="fixed inset-0 bg-black/80 backdrop-blur-sm z-40"
       @click="closeMenu"
     >
-      <div
-        class="flex flex-col absolute top-20 left-1/2 transform -translate-x-1/2 p-4 rounded shadow-lg"
-      >
+      <div class="flex flex-col absolute inset-0 items-center mt-20 p-4">
         <UNavigationMenu
           :items="verticalLinks"
           @click.stop
           orientation="vertical"
           class="text-center"
+          :ui="{
+            link: 'text-2xl text-center',
+          }"
         />
       </div>
     </div>
