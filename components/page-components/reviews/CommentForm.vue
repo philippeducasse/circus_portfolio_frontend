@@ -1,8 +1,9 @@
 <template>
-  <div class="max-w-lg mx-auto">
-    <h3 class="mb-6">{{ $t("formTitle") }}</h3>
+  <div class="max-w-2xl w-full mx-auto">
+    <h3 class="mb-6 text-center">{{ $t("formTitle") }}</h3>
+    <p class="text-base">{{ $t("formSubtitle") }}</p>
     <form class="flex flex-col gap-5" @submit.prevent="onSubmit">
-      <UFormField :label="$t('yourName')">
+      <UFormField :label="$t('yourName')" :help="$t('anonymous')">
         <UInput id="name" v-model="form.name" class="w-full" size="lg" />
       </UFormField>
 
@@ -17,14 +18,14 @@
         />
       </UFormField>
 
-      <UFormField :label="$t('show')">
+      <UFormField :label="$t('show')" :help="$t('noShow')">
         <USelect
           id="show"
-          v-model="form.show"
+          v-model="form.project_id"
           class="w-full"
           size="lg"
           :placeholder="$t('selectShow')"
-          :items="projects.map((p) => ({ label: p.projectTitle, value: p.projectId }))"
+          :items="projects.map((p) => ({ label: p.title, value: p.id }))"
         />
       </UFormField>
 
@@ -43,13 +44,13 @@ const { projects } = useProjects();
 const form = ref({
   name: "",
   message: "",
-  show: "",
+  project_id: undefined,
 });
 
 const emit = defineEmits(["submit"]);
 
 const onSubmit = () => {
   emit("submit", { ...form.value });
-  form.value = { name: "", message: "", show: "" };
+  form.value = { name: "", message: "", project_id: undefined };
 };
 </script>

@@ -79,7 +79,7 @@ export default defineI18nConfig(() => ({
       lulu: "Lulu est un spectacle de cirque contemporain de 45 minutes, créé et interprété par Philippe. Il raconte l'histoire d'un individu troublé qui cherche désespérément la solution à tous ses problèmes - 'Lulu'. Ce spectacle varié inclut du mime, de la manipulation d'objets, de l'acrobatie et de la danse, ainsi qu'une forte dose d'humour noir.",
       lulu_short:
         "Un voyage psychédélique sauvage et émotionnel, où le mime et la manipulation d'objets brouillent les frontières entre fantasme et réalité. Avec des bongs invisibles et du twerking discret.",
-      abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
+      abb: "Ah Bah Bravo est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
       abb_short:
         "Une célébration de la joie de vivre, avec des bâtons enflammés en équilibre sur les mains et du hulahoop sur les fesses défiant la gravité.",
       forgotten:

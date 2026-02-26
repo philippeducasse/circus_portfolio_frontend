@@ -13,11 +13,11 @@
           arrows
         >
           <NuxtImg
-            :src="item"
+            :src="item.src"
             draggable="false"
             class="cursor-pointer object-contain max-h-[600px] w-auto my-auto"
-            @click="openImage(item)"
-            :alt="item"
+            @click="isModalOpen = true"
+            :alt="item.alt"
           />
         </UCarousel>
         <UButton
@@ -28,35 +28,7 @@
         />
       </div>
     </div>
-    <Teleport to="#teleports">
-      <div
-        v-if="isModalOpen"
-        class="fixed inset-0 dark bg-(--ui-bg) flex justify-center items-center z-50 pointer-events-auto"
-      >
-        <div class="relative w-fit">
-          <UCarousel
-            ref="carouselRef"
-            v-slot="{ item }"
-            :items="items"
-            :ui="{ item: 'basis-full', container: 'items-center' }"
-            class="md:w-4/5 mx-auto rounded-lg flex items-center"
-            arrows
-          >
-            <NuxtImg
-              :src="item"
-              draggable="false"
-              class="object-contain h-full max-h-[600px] w-full"
-              :alt="item"
-            />
-          </UCarousel>
-          <UButton
-            @click="closeImage"
-            label="&#x2715;"
-            class="absolute -bottom-12 md:bottom-0 right-4 md:right-12"
-          />
-        </div>
-      </div>
-    </Teleport>
+    <ImageCarouselModal v-model="isModalOpen" :items="items" />
   </div>
 </template>
 
@@ -64,50 +36,31 @@
 import { UButton } from "#components";
 
 const items = [
-  "img/images/ABB2.webp",
-  "img/images/ABB3.webp",
-  "img/images/ABB4.webp",
-  "img/images/ABB5.webp",
-  "img/images/ABB6.webp",
-  "img/images/ABB7.webp",
-  "img/images/ABB8.webp",
-  "img/images/Amimi.webp",
-  "img/images/ejc.webp",
-  "img/images/ejc2.webp",
-  "img/images/ejc3.webp",
-  "img/images/fusion.webp",
-  "img/images/hs.webp",
-  "img/images/hs_ejc.webp",
-  "img/images/kaos.webp",
-  "img/images/lulu.webp",
-  "img/images/lulu_smoke.webp",
-  "img/images/lulu_stare.webp",
-  "img/images/maranam.webp",
-  "img/images/maranam2.webp",
-  "img/images/philo_rolli.webp",
-  "img/images/snowlulu2.webp",
-  "img/images/spektakel.webp",
+  { src: "img/images/ABB2.webp", alt: "ABB2" },
+  { src: "img/images/ABB3.webp", alt: "ABB3" },
+  { src: "img/images/ABB4.webp", alt: "ABB4" },
+  { src: "img/images/ABB5.webp", alt: "ABB5" },
+  { src: "img/images/ABB6.webp", alt: "ABB6" },
+  { src: "img/images/ABB7.webp", alt: "ABB7" },
+  { src: "img/images/ABB8.webp", alt: "ABB8" },
+  { src: "img/images/Amimi.webp", alt: "Amimi" },
+  { src: "img/images/ejc.webp", alt: "ejc" },
+  { src: "img/images/ejc2.webp", alt: "ejc2" },
+  { src: "img/images/ejc3.webp", alt: "ejc3" },
+  { src: "img/images/fusion.webp", alt: "fusion" },
+  { src: "img/images/hs.webp", alt: "hs" },
+  { src: "img/images/hs_ejc.webp", alt: "hs_ejc" },
+  { src: "img/images/kaos.webp", alt: "kaos" },
+  { src: "img/images/lulu.webp", alt: "lulu" },
+  { src: "img/images/lulu_smoke.webp", alt: "lulu_smoke" },
+  { src: "img/images/lulu_stare.webp", alt: "lulu_stare" },
+  { src: "img/images/maranam.webp", alt: "maranam" },
+  { src: "img/images/maranam2.webp", alt: "maranam2" },
+  { src: "img/images/philo_rolli.webp", alt: "philo_rolli" },
+  { src: "img/images/snowlulu2.webp", alt: "snowlulu2" },
+  { src: "img/images/spektakel.webp", alt: "spektakel" },
 ];
 
-const selectedImage = ref<undefined | string>(undefined);
-const openImage = (url: string) => {
-  isModalOpen.value = true;
-  selectedImage.value = url;
-};
-const closeImage = () => {
-  isModalOpen.value = false;
-};
-
 const isModalOpen = ref(false);
-
-const handleEscKey = (e: KeyboardEvent) => {
-  if (e.key === "Escape" && isModalOpen.value === true) {
-    closeImage();
-  }
-};
-
-onMounted(() => window.addEventListener("keyup", handleEscKey));
-
-onUnmounted(() => window.removeEventListener("keyup", handleEscKey));
 </script>
 <style scoped></style>

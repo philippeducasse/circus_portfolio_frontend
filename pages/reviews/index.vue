@@ -13,27 +13,20 @@
     </UButton>
   </div>
 
-  <Teleport to="body">
-    <Transition name="drawer">
-      <div v-if="showForm" class="fixed inset-0 z-50 flex justify-end">
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="showForm = false" />
-        <div
-          class="relative z-10 w-full max-w-md h-full overflow-y-auto bg-gray-950 border-l border-white/10 shadow-2xl p-6 flex flex-col gap-4"
-        >
-          <div class="flex items-center justify-between">
-            <UButton variant="ghost" color="neutral" icon="i-lucide-x" @click="showForm = false" />
-          </div>
-          <CommentForm @submit="handleSubmit" />
-        </div>
+  <UModal v-model:open="showForm">
+    <template #content>
+      <div class="p-6">
+        <CommentForm @submit="handleSubmit" />
       </div>
-    </Transition>
-  </Teleport>
+    </template>
+  </UModal>
 </template>
 
 <script setup lang="ts">
 import Comment from "~/components/page-components/projects/Comment.vue";
 import CommentForm from "~/components/page-components/reviews/CommentForm.vue";
 
+const router = useRoute();
 const comments = ref(null);
 const showForm = ref(false);
 
@@ -48,31 +41,32 @@ const fetchComments = async () => {
 
 onMounted(() => {
   fetchComments();
+  if (router.query.show) {
+    showForm.value = true;
+  }
 });
+const toast = useToast();
 
-const handleSubmit = (data: unknown) => {
+function showToast(message: string) {
+  console.log("toasting");
+  toast.add({
+    title: message,
+    class: "text-center",
+  });
+}
+
+const handleSubmit = async (data: unknown) => {
   showForm.value = false;
-  // TODO: send to backend
+  console.log({ data });
+
+  const response = await fetch("http://localhost:8000", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (response.ok) {
+    showToast("Thank you for your comment!");
+  }
 };
 </script>
-
-<style scoped>
-.drawer-enter-active,
-.drawer-leave-active {
-  transition: opacity 0.25s ease;
-}
-.drawer-enter-active .relative,
-.drawer-leave-active .relative {
-  transition: transform 0.25s ease;
-}
-.drawer-enter-from,
-.drawer-leave-to {
-  opacity: 0;
-}
-.drawer-enter-from .relative {
-  transform: translateX(100%);
-}
-.drawer-leave-to .relative {
-  transform: translateX(100%);
-}
-</style>

@@ -31,7 +31,9 @@
       <YoutubeEmbedding :video-id="project.videoId" :title="project.title" />
     </div>
   </div>
-  <UPageGrid v-if="project.images" class="mt-16 gap-3 w-full max-w-6xl mx-auto px-4 md:px-0 auto-rows-[250px]"
+  <UPageGrid
+    v-if="project.images"
+    class="mt-16 gap-3 w-full max-w-6xl mx-auto px-4 md:px-0 auto-rows-[250px]"
     ><img
       v-for="(image, index) in project.images"
       :key="index"
@@ -40,40 +42,23 @@
       :class="`rounded-lg w-full aspect-[4/3] object-cover object-top cursor-pointer ${image.class}`"
       @click="openCarousel(index)"
   /></UPageGrid>
-  <Teleport to="#teleports">
-    <div
-      v-if="isModalOpen"
-      class="fixed inset-0 dark bg-(--ui-bg) flex justify-center items-center z-50 pointer-events-auto"
-    >
-      <div class="relative w-full md:w-4/5 max-w-5xl">
-        <UCarousel
-          :key="startIndex"
-          v-slot="{ item }"
-          :items="project.images!"
-          :embla-options="{ startIndex }"
-          :ui="{ item: 'basis-full', container: 'place-items-center' }"
-          class="mx-auto rounded-lg flex items-center"
-          arrows
-        >
-          <NuxtImg
-            :src="item.src"
-            :alt="item.alt"
-            draggable="false"
-            class="object-contain max-h-[80vh] w-full"
-          />
-        </UCarousel>
-        <UButton
-          @click="closeCarousel"
-          label="&#x2715;"
-          class="absolute -bottom-12 md:bottom-0 right-4 md:right-0"
-        />
-      </div>
-    </div>
-  </Teleport>
+  <div class="my-6 w-full">
+    <h3 class="">{{ $t("reviews") }}</h3>
+    <Comment v-if="comments" />
+    <UButton icon="i-lucide-pencil-line" :to="`/reviews?show=${project.id}`">{{
+      $t("formTitle")
+    }}</UButton>
+  </div>
+  <ImageCarouselModal
+    v-model="isModalOpen"
+    :items="project.images || []"
+    :start-index="startIndex"
+  />
 </template>
 
 <script setup lang="ts">
 import YoutubeEmbedding from "./YoutubeEmbedding.vue";
+import Comment from "~/components/page-components/projects/Comment.vue";
 
 interface Image {
   src: string;
@@ -96,22 +81,26 @@ const props = defineProps<{
 
 const isModalOpen = ref(false);
 const startIndex = ref(0);
+const comments = ref(null);
+
+const fetchComments = async () => {
+  try {
+    const response = await fetch("http://localhost:8000");
+    comments.value = await response.json();
+    console.log("comments: ", comments.value);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+};
+
+onMounted(() => {
+  fetchComments();
+});
 
 const openCarousel = (index: number) => {
   startIndex.value = index;
   isModalOpen.value = true;
 };
-
-const closeCarousel = () => {
-  isModalOpen.value = false;
-};
-
-const handleEscKey = (e: KeyboardEvent) => {
-  if (e.key === "Escape" && isModalOpen.value) closeCarousel();
-};
-
-onMounted(() => window.addEventListener("keyup", handleEscKey));
-onUnmounted(() => window.removeEventListener("keyup", handleEscKey));
 
 const containerClass = computed(() =>
   props.index % 2 === 1
