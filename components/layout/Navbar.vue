@@ -51,7 +51,7 @@
         v-if="isModalOpen"
         class="fixed inset-0 dark bg-(--ui-bg) flex justify-center items-center z-50 pointer-events-auto"
       >
-        <CommentForm />
+        <ReviewForm />
       </div>
     </Teleport> -->
   </UContainer>
@@ -62,7 +62,7 @@ import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import LogoWithName from "./LogoWithName.vue";
 import { UNavigationMenu } from "#components";
-import CommentForm from "../page-components/reviews/CommentForm.vue";
+import ReviewForm from "../page-components/reviews/ReviewForm.vue";
 
 const { locale, setLocale } = useI18n();
 const isMenuOpen = ref(false);

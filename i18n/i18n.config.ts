@@ -61,7 +61,7 @@ export default defineI18nConfig(() => ({
       yourMessage: "Your message",
       show: "Show",
       selectShow: "Select a show",
-      submitComment: "Submit",
+      submitReview: "Submit",
     },
     fr: {
       projects: "Projets",
@@ -123,7 +123,7 @@ export default defineI18nConfig(() => ({
       yourMessage: "Votre message",
       show: "Spectacle",
       selectShow: "Choisir un spectacle",
-      submitComment: "Envoyer",
+      submitReview: "Envoyer",
     },
   },
 }));

@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-2xl w-full mx-auto">
     <h3 class="mb-6 text-center">{{ $t("formTitle") }}</h3>
-    <p class="text-base">{{ $t("formSubtitle") }}</p>
+    <p class="text-base my-2">{{ $t("formSubtitle") }}</p>
     <form class="flex flex-col gap-5" @submit.prevent="onSubmit">
       <UFormField :label="$t('yourName')" :help="$t('anonymous')">
         <UInput id="name" v-model="form.name" class="w-full" size="lg" />
@@ -30,7 +30,7 @@
       </UFormField>
 
       <UButton type="submit" size="lg" class="mt-2 w-full justify-center">
-        {{ $t("submitComment") }}
+        {{ $t("submitReview") }}
       </UButton>
     </form>
   </div>

@@ -44,7 +44,7 @@
   /></UPageGrid>
   <div class="my-6 w-full">
     <h3 class="">{{ $t("reviews") }}</h3>
-    <Comment v-if="comments" />
+    <Review v-if="reviews" />
     <UButton icon="i-lucide-pencil-line" :to="`/reviews?show=${project.id}`">{{
       $t("formTitle")
     }}</UButton>
@@ -58,7 +58,7 @@
 
 <script setup lang="ts">
 import YoutubeEmbedding from "./YoutubeEmbedding.vue";
-import Comment from "~/components/page-components/projects/Comment.vue";
+import Review from "~/components/page-components/projects/Review.vue";
 
 interface Image {
   src: string;
@@ -81,20 +81,20 @@ const props = defineProps<{
 
 const isModalOpen = ref(false);
 const startIndex = ref(0);
-const comments = ref(null);
+const reviews = ref(null);
 
-const fetchComments = async () => {
+const fetchReviews = async () => {
   try {
     const response = await fetch("http://localhost:8000");
-    comments.value = await response.json();
-    console.log("comments: ", comments.value);
+    reviews.value = await response.json();
+    console.log("reviews: ", reviews.value);
   } catch (error) {
     console.error("Error fetching data:", error);
   }
 };
 
 onMounted(() => {
-  fetchComments();
+  fetchReviews();
 });
 
 const openCarousel = (index: number) => {

@@ -1,14 +1,11 @@
 <template>
   <div>
     <h2>{{ $t("reviews") }}</h2>
-    <Comment v-for="comment in comments" :key="comment" />
+    <h3>{{ $t("reviewsSubtitle") }}</h3>
 
-    <UButton
-      class="fixed bottom-6 right-6 z-40"
-      size="lg"
-      icon="i-lucide-pencil-line"
-      @click="showForm = true"
-    >
+    <Review v-for="review in reviews" :key="review" :review="review" />
+
+    <UButton class="" size="lg" icon="i-lucide-pencil-line" @click="showForm = true">
       {{ $t("formTitle") }}
     </UButton>
   </div>
@@ -16,31 +13,31 @@
   <UModal v-model:open="showForm">
     <template #content>
       <div class="p-6">
-        <CommentForm @submit="handleSubmit" />
+        <ReviewForm @submit="handleSubmit" />
       </div>
     </template>
   </UModal>
 </template>
 
 <script setup lang="ts">
-import Comment from "~/components/page-components/projects/Comment.vue";
-import CommentForm from "~/components/page-components/reviews/CommentForm.vue";
+import Review from "~/components/page-components/projects/Review.vue";
+import ReviewForm from "~/components/page-components/reviews/ReviewForm.vue";
 
 const router = useRoute();
-const comments = ref(null);
+const reviews = ref(null);
 const showForm = ref(false);
 
-const fetchComments = async () => {
+const fetchReviews = async () => {
   try {
     const response = await fetch("http://localhost:8000");
-    comments.value = await response.json();
+    reviews.value = await response.json();
   } catch (error) {
     console.error("Error fetching data:", error);
   }
 };
 
 onMounted(() => {
-  fetchComments();
+  fetchReviews();
   if (router.query.show) {
     showForm.value = true;
   }
@@ -66,7 +63,8 @@ const handleSubmit = async (data: unknown) => {
   });
 
   if (response.ok) {
-    showToast("Thank you for your comment!");
+    console.log("showing toast!");
+    showToast("Thank you for your review!");
   }
 };
 </script>

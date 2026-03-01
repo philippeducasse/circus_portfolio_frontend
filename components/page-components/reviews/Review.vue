@@ -1,25 +1,25 @@
 <template>
   <div>
-    <div v-for="comment in comments">This is a comment</div>
+    <div v-for="review in reviews">This is a review</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const comments = ref(null);
+const reviews = ref(null);
 
-const fetchComments = async () => {
+const fetchReviews = async () => {
   try {
     const response = await fetch("http://localhost:8000");
-    comments.value = await response.json();
+    reviews.value = await response.json();
   } catch (error) {
     console.error("Error fetching data:", error);
   }
 };
 
 onMounted(() => {
-  fetchComments();
+  fetchReviews();
 });
 
 const props = defineProps<{
