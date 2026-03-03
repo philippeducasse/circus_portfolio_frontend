@@ -62,11 +62,9 @@ import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import LogoWithName from "./LogoWithName.vue";
 import { UNavigationMenu } from "#components";
-import ReviewForm from "../page-components/reviews/ReviewForm.vue";
 
 const { locale, setLocale } = useI18n();
 const isMenuOpen = ref(false);
-const isModalOpen = ref(false);
 const isLocaleDropdownOpen = ref(false);
 const { t } = useI18n();
 
@@ -77,9 +75,6 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
-const openModal = () => {
-  isModalOpen.value = true;
-};
 const closeMenu = (event: Event) => {
   if (!(event.target as HTMLElement)?.closest(".absolute")) {
     isMenuOpen.value = false;
@@ -103,7 +98,7 @@ const baseLinks = computed(() => [
   { label: t("contact"), to: "/contact", onSelect: () => (isMenuOpen.value = false) },
   { label: t("calendar"), to: "/calendar", onSelect: () => (isMenuOpen.value = false) },
   { label: t("support"), to: "/support", onSelect: () => (isMenuOpen.value = false) },
-  // { label: t("reviews"), to: "/reviews", onSelect: () => (isMenuOpen.value = false) },
+  { label: t("reviews"), to: "/reviews", onSelect: () => (isMenuOpen.value = false) },
 ]);
 const horizontalLinks = computed(() => [
   ...baseLinks.value,

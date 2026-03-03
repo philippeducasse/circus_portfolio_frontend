@@ -1,12 +1,14 @@
 <template>
-  <div class="text-center flex flex-col h-full items-center gap-y-[5vh] justify-evenly md:-mt-4">
+  <div
+    class="text-center flex flex-col h-full items-center gap-y-[5vh] justify-evenly md:-mt-4 min-h-[80vh]"
+  >
     <h1 class="mt-16 md:mt-4">Philippe Ducasse</h1>
     <UCarousel
       ref="carouselRef"
       v-slot="{ item }"
       :items="items"
       :ui="{ item: 'basis-full', container: 'items-center' }"
-      class="w-72 md:w-2/3 mx-auto rounded-lg overflow-hidden"
+      class="w-full md:w-2/3 m-0 md:mx-auto rounded-lg overflow-hidden"
       :autoplay="{ delay: 3000 }"
       loop
     >

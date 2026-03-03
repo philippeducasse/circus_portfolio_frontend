@@ -10,7 +10,7 @@
       <p v-else>{{ $t("abb") }}</p>
       <div class="flex justify-between mt-6">
         <p class="font-bold text-sm">
-          {{ $t("length") }}: <span class="font-normal">{{ $t(project.length) }} min</span>
+          {{ $t("length") }}: <span class="font-normal">{{ project.length }}min</span>
         </p>
         <p class="font-bold text-sm">
           {{ $t("stage") }}: <span class="font-normal">{{ $t(project.stage) }}</span>
@@ -33,18 +33,20 @@
   </div>
   <UPageGrid
     v-if="project.images"
-    class="mt-16 gap-3 w-full max-w-6xl mx-auto px-4 md:px-0 auto-rows-[250px]"
+    class="mt-16 gap-3 gap-y-3 md:gap-y-0 w-full max-w-6xl mx-auto px-4 md:px-0 auto-rows-[350px] md:auto-rows-[250px]"
     ><img
       v-for="(image, index) in project.images"
       :key="index"
       :src="image.src"
       :alt="image.alt"
-      :class="`rounded-lg w-full aspect-[4/3] object-cover object-top cursor-pointer ${image.class}`"
+      :class="`rounded-lg w-full h-full aspect-[4/3] object-cover object-top cursor-pointer ${image.class}`"
       @click="openCarousel(index)"
   /></UPageGrid>
-  <div class="my-6 w-full">
-    <h3 class="">{{ $t("reviews") }}</h3>
-    <Review v-if="reviews" />
+  <div class="">
+    <div v-if="reviews" class="my-6 w-full">
+      <h3 class="">{{ $t("reviews") }}</h3>
+      <ReviewCard v-for="review in reviews" :review="review" />
+    </div>
     <UButton icon="i-lucide-pencil-line" :to="`/reviews?show=${project.id}`">{{
       $t("formTitle")
     }}</UButton>
@@ -57,8 +59,9 @@
 </template>
 
 <script setup lang="ts">
+import ReviewCard from "../reviews/ReviewCard.vue";
 import YoutubeEmbedding from "./YoutubeEmbedding.vue";
-import Review from "~/components/page-components/projects/Review.vue";
+import type { Review } from "../reviews/ReviewCard.vue";
 
 interface Image {
   src: string;
@@ -76,26 +79,12 @@ const props = defineProps<{
     stage: string;
     images?: Image[];
   };
+  reviews?: Review[];
   index: number;
 }>();
 
 const isModalOpen = ref(false);
 const startIndex = ref(0);
-const reviews = ref(null);
-
-const fetchReviews = async () => {
-  try {
-    const response = await fetch("http://localhost:8000");
-    reviews.value = await response.json();
-    console.log("reviews: ", reviews.value);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-};
-
-onMounted(() => {
-  fetchReviews();
-});
 
 const openCarousel = (index: number) => {
   startIndex.value = index;
