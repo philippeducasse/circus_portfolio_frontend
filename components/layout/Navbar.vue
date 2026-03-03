@@ -64,7 +64,7 @@ const isMenuOpen = ref(false);
 const isLocaleDropdownOpen = ref(false);
 const { t } = useI18n();
 
-const availableLocales = ["en", "fr"];
+const availableLocales: ("en" | "fr")[] = ["en", "fr"];
 const currentLocale = computed(() => locale.value);
 
 const toggleMenu = () => {
@@ -72,7 +72,7 @@ const toggleMenu = () => {
 };
 
 const closeMenu = (event: Event) => {
-  if (!event?.target?.closest(".absolute")) {
+  if (!(event.target as HTMLElement)?.closest(".absolute")) {
     isMenuOpen.value = false;
   }
 };
@@ -116,7 +116,7 @@ const verticalLinks = computed(() => [
   {
     label: availableLocales.find((l) => l !== currentLocale.value)?.toUpperCase(),
     onSelect: () =>
-      handleLanguageSelection(availableLocales.find((l) => l !== currentLocale.value) || ""),
+      handleLanguageSelection(availableLocales.find((l) => l !== currentLocale.value)!),
     class: "hover:cursor-pointer",
   },
 ]);
