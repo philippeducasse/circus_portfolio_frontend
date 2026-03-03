@@ -8,6 +8,7 @@ export default defineI18nConfig(() => ({
       home: "Home",
       support: "Support",
       contact: "Contact",
+      reviews: "Reviews",
       welcome: "Welcome",
       hero_subtitle: "Contemporary Circus and Mime",
       projects_header:
@@ -15,11 +16,22 @@ export default defineI18nConfig(() => ({
       download_dossier: "Download dossier",
       more_info: "See more",
       lulu: "Lulu is a 45-minute contemporary circus piece created and performed by Philippe. It tells the story of a troubled individual desperately searching for the solution to all of his problems - 'Lulu'. The varied piece includes mime, object manipulation, acrobatics, and dance - as well as strong use of dark humour.",
+      lulu_short:
+        "A wild and emotional psychedlic journey, where contemporary mime and object manipulation blur the lines between fantasy and reality. Includes invisible bongs and mild twerking.",
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
+      abb_short:
+        "A celebration of the joy of life, with flamming staffs in a handstand and gravity defying butt-hooping ",
       stone:
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
+      stone_short: "A powerful exploration of technical virtuosity with the contact staff",
       forgotten:
         "A mesmirising and powerful piece, Forgotten explores the depths of minimalism using the contact ball.",
+      forgotten_short: "An exploration of the depths of minimalism using the contact ball.",
+      length: "Length",
+      stage: "Preferred stage",
+      indoor: "Indoor",
+      outdoor: "Outdoor",
+      flexible: "Flexible",
       about_title: "About",
       about:
         "Philippe Ducasse is a contemporary circus artist, specializing in contact staff and contact ball juggling. He also works across disciplines and is trained in a variety of other forms including clowning, handstands, dance, acrobatics, fire-spinning, and mime. After obtaining a bachelor’s degree in psychology, he attended a martial arts school in China for nine months. He went on to complete a three-year circus program at Die Etage School for Performance and Visual Arts in Berlin, graduating with a focus on object manipulation. Since then, Philippe has performed around the world in various street, music, and juggling festivals. Philippe is based in Berlin (kinda), where he also performs and teaches. He is also a programmer, husband, and especially a father of two little twins.",
@@ -44,6 +56,12 @@ export default defineI18nConfig(() => ({
       support_finance: "Financial Support",
       support_artistic: "Artistic Support",
       full_screen: "View in full screen",
+      formTitle: "Leave a Review",
+      yourName: "Your name",
+      yourMessage: "Your message",
+      show: "Show",
+      selectShow: "Select a show",
+      submitReview: "Submit",
     },
     fr: {
       projects: "Projets",
@@ -51,6 +69,7 @@ export default defineI18nConfig(() => ({
       home: "Accueil",
       support: "Soutien",
       contact: "Contact",
+      reviews: "Avis",
       hero_subtitle: "Cirque et mime contemporain",
       welcome: "Bienvenue",
       projects_header:
@@ -58,11 +77,23 @@ export default defineI18nConfig(() => ({
       download_dossier: "Télécharger le dossier",
       more_info: "Voir plus",
       lulu: "Lulu est un spectacle de cirque contemporain de 45 minutes, créé et interprété par Philippe. Il raconte l'histoire d'un individu troublé qui cherche désespérément la solution à tous ses problèmes - 'Lulu'. Ce spectacle varié inclut du mime, de la manipulation d'objets, de l'acrobatie et de la danse, ainsi qu'une forte dose d'humour noir.",
-      abb: "Ah Bah Bravo (français pour 'eh bien bravo !') est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
+      lulu_short:
+        "Un voyage psychédélique sauvage et émotionnel, où le mime et la manipulation d'objets brouillent les frontières entre fantasme et réalité. Avec des bongs invisibles et du twerking discret.",
+      abb: "Ah Bah Bravo est un spectacle de cirque contemporain interactif, drôle et léger, idéal pour un public familial. Créé et interprété par Philippe Ducasse, sa durée est flexible entre 20 et 45 minutes et il est conçu pour être joué dans la rue et sur des scènes en plein air.",
+      abb_short:
+        "Une célébration de la joie de vivre, avec des bâtons enflammés en équilibre sur les mains et du hulahoop sur les fesses défiant la gravité.",
       forgotten:
         "Pièce fascinante et puissante, Forgotten explore les profondeurs du minimalisme en utilisant la balle de contact.",
+      forgotten_short:
+        "Une plongée dans les profondeurs du minimalisme à travers la manipulation de la balle de contact.",
       stone:
         'Philippe a créé plusieurs performances courtes, souvent entre 5 et 15 minutes. Parmi elles, "Stone", qui explore la physicalité, la dramaturgie et la danse à travers la manipulation du bâton de contact. Philippe se produit également régulièrement dans une large gamme de spectacles de mime, de clown et de jonglerie avec le feu.',
+      stone_short: "Une exploration puissante de la virtuosité technique avec le bâton de contact.",
+      length: "Durée",
+      stage: "Préférence de scène",
+      indoor: "intérieur",
+      outdoor: "extérieur",
+      flexible: "flexible",
       about_title: "À Propos",
       about:
         "Philippe Ducasse est un artiste de cirque contemporain spécialisé dans la jonglerie avec bâton de contact et balle de contact. Il travaille également dans d'autres disciplines et est formé à diverses pratiques telles que le clown, les équilibres sur les mains, la danse, l'acrobatie, la jonglerie de feu et le mime. Après des études en psychologie, il se forme dans le arts martiaux pendant 9 mois dans une école en Chine. Il complétera ensuite une formation de cirque contemporain Die Etage à Berlin, avec une spécialisation dans la manipulation d'objets. Philippe est aussi un développeur web, un mari, et surtout un papa de deux petites jumelles.",
@@ -87,6 +118,12 @@ export default defineI18nConfig(() => ({
       support_finance: "Soutien financier",
       support_artistic: "Soutien Artistique",
       full_screen: "Voir en plein écran",
+      formTitle: "Laisser un avis",
+      yourName: "Votre nom",
+      yourMessage: "Votre message",
+      show: "Spectacle",
+      selectShow: "Choisir un spectacle",
+      submitReview: "Envoyer",
     },
   },
 }));

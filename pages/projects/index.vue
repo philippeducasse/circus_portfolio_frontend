@@ -1,29 +1,18 @@
 <template>
-  <h2 class="text-center py-8 px-4">{{ $t("projects_header") }}</h2>
-
+  <h2 class="text-center py-8 px-4">{{ $t("projects") }}</h2>
+  <h3 class="text-center py-8 px-4">{{ $t("projects_header") }}</h3>
   <div class="flex flex-col items-center mt-4 mb-4 text-left">
-    <Project
+    <ProjectDetailView
       v-for="(project, index) in projects"
-      :key="project.projectName"
+      :key="project.title"
       :project="project"
       :index="index"
     />
   </div>
 </template>
 <script setup lang="ts">
-import Project from "~/components/page-components/projects/Project.vue";
-const projects = [
-  {
-    projectName: "Lulu",
-    videoId: "mRTKk2jQAa0",
-    dossierPath: "/dossiers/Dossier_Lulu_2026-en.pdf",
-  },
-  {
-    projectName: "Ah Bah Bravo!",
-    videoId: "nIY84br9loQ",
-    dossierPath: "/dossiers/AhBahBravo_2026_compressed.pdf",
-  },
-  { projectName: "Stone", videoId: "9cfrJuHebWM" },
-  { projectName: "Forgotten", videoId: "_9mTJzKfU1s" },
-];
+import { useProjects } from "~/composables/useProjects";
+import ProjectDetailView from "~/components/page-components/projects/ProjectDetailView.vue";
+
+const { projects } = useProjects();
 </script>

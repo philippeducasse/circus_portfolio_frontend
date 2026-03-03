@@ -3,6 +3,10 @@
 uses docker, builds the image through the deploy.yaml
 git push origin main:production
 
+# Todo:
+
+-crop abb5 to fit other hero images
+
 # DEPRECATED
 
 ## run yarn deploy to trigger deployment

@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col min-h-screen self-stretch">
-    <Navbar />
+    <div class="relative z-[60]">
+      <Navbar />
+    </div>
     <ContentLayout>
       <slot />
     </ContentLayout>
@@ -13,16 +15,6 @@
 </template>
 
 <script setup lang="ts">
-
-const toast = useToast()
-
-function showToast() {
-  toast.add({
-    title: 'Bravo!',
-    class: "text-center"
-  })
-}
-
 import Navbar from "~/components/layout/Navbar.vue";
 import Footer from "~/components/layout/Footer.vue";
 import ContentLayout from "~/components/layout/ContentLayout.vue";

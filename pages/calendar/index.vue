@@ -3,7 +3,7 @@
     <h2 class="pb-8 md:pb-16">{{ $t("calendar_title") }}</h2>
     <!-- Upcoming -->
     <div class="flex flex-col md:gap-16 gap-y-10 pb-8 md:pb-16 text-left">
-      <ul class="">
+      <ul>
         <li class="preformatted-text decoration-none">
           <h3 class="my-8">{{ $t("calendar_upcoming_title") }}</h3>
           <p>{{ $t("calendar_dates_upcoming") }}</p>
@@ -12,7 +12,6 @@
     </div>
     <!-- past -->
     <div class="flex flex-col gap-y-10 text-left">
-
       <h3>{{ $t("calendar_past_title") }}</h3>
       <ul v-for="year in years" :key="year">
         <CalendarYear :year="year" />
@@ -22,9 +21,9 @@
 </template>
 
 <script setup lang="ts">
-import CalendarYear from '~/components/page-components/calendar/CalendarYear.vue';
+import CalendarYear from "~/components/page-components/calendar/CalendarYear.vue";
 
-const years = [2025,2024,2023,2022,2021]
+const years = [2025, 2024, 2023, 2022, 2021];
 </script>
 
 <style scoped></style>
