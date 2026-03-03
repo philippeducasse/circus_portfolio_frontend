@@ -78,7 +78,6 @@ const toggleMenu = () => {
 };
 
 const openModal = () => {
-  console.log("opening modal");
   isModalOpen.value = true;
 };
 const closeMenu = (event: Event) => {
