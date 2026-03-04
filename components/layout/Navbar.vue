@@ -45,15 +45,6 @@
         />
       </div>
     </div>
-    <!-- <UButton variant="soft" @click="openModal">{{ $t("formTitle") }} !</UButton>
-    <Teleport to="#teleports">
-      <div
-        v-if="isModalOpen"
-        class="fixed inset-0 dark bg-(--ui-bg) flex justify-center items-center z-50 pointer-events-auto"
-      >
-        <ReviewForm />
-      </div>
-    </Teleport> -->
   </UContainer>
 </template>
 

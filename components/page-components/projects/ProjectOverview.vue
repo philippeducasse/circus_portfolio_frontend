@@ -2,7 +2,7 @@
   <hr v-if="index > 0" class="w-full max-w-6xl border-t border-white/10 mt-20" />
   <div :class="containerClass">
     <div class="flex flex-col justify-evenly flex-1 md:p-0 p-4">
-      <h2 class="text-left mb-6 md:mb-12">{{ project.title }}</h2>
+      <h2 class="text-primary-400 text-left mb-6 md:mb-12">{{ project.title }}</h2>
 
       <p v-if="project.title !== 'Ah Bah Bravo!'">
         {{ $t(`${project.title.toLowerCase()}_short`) }}

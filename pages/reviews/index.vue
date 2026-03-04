@@ -7,7 +7,17 @@
         {{ $t("formTitle") }}
       </UButton>
     </div>
-    <Review v-for="review in reviews" :key="review" :review="review" />
+    <div v-for="(projectReviews, project_id) in groupedReviews" :key="project_id" class="my-8">
+      <h2 class="text-primary-400 mb-8 text-center">{{ projectMap[project_id]?.title }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ReviewCard
+          v-for="review in projectReviews"
+          :key="review.id"
+          :review="review"
+          show-project-title
+        />
+      </div>
+    </div>
   </div>
 
   <UModal v-model:open="showForm">
@@ -20,12 +30,13 @@
 </template>
 
 <script setup lang="ts">
-import Review from "~/components/page-components/reviews/Review.vue";
+import ReviewCard, { type Review } from "~/components/page-components/reviews/ReviewCard.vue";
 import ReviewForm from "~/components/page-components/reviews/ReviewForm.vue";
 
 const router = useRoute();
-const reviews = ref(null);
+const reviews = ref<Review[]>([]);
 const showForm = ref(false);
+const { projects } = useProjects();
 
 const fetchReviews = async () => {
   try {
@@ -53,6 +64,19 @@ function showToast(message: string) {
   });
 }
 
+const groupedReviews = computed(() => {
+  if (!reviews.value) return {};
+  return reviews.value.reduce((acc: Record<number, Review[]>, review: Review) => {
+    (acc[review.project_id] ??= []).push(review);
+    return acc;
+  }, {});
+});
+
+const projectMap = computed(() => {
+  return Object.fromEntries(projects.value.map((p) => [p.id, p]));
+});
+
+console.log({ groupedReviews });
 const handleSubmit = async (data: unknown) => {
   showForm.value = false;
   console.log("submitting", { data });

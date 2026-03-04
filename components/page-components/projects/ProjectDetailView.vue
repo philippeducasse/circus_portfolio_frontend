@@ -2,7 +2,7 @@
   <hr v-if="index > 0" class="w-full max-w-6xl border-t border-white/10 mt-20" />
   <div :class="containerClass" :id="project.title">
     <div class="flex flex-col justify-evenly flex-1 md:p-0 p-4">
-      <h2 class="text-left mb-6 md:mb-12">{{ project.title }}</h2>
+      <h2 class="text-primary-400 text-left mb-6 md:mb-12">{{ project.title }}</h2>
 
       <p v-if="project.title !== 'Ah Bah Bravo!'">
         {{ $t(project.title.toLowerCase()) }}
@@ -33,7 +33,7 @@
   </div>
   <UPageGrid
     v-if="project.images"
-    class="mt-16 gap-3 gap-y-3 md:gap-y-0 w-full max-w-6xl mx-auto px-4 md:px-0 auto-rows-[350px] md:auto-rows-[250px]"
+    class="mt-16 gap-3 gap-3 w-full max-w-6xl mx-auto px-4 md:px-0 auto-rows-[350px] md:auto-rows-[250px]"
     ><img
       v-for="(image, index) in project.images"
       :key="index"
@@ -44,12 +44,16 @@
   /></UPageGrid>
   <div class="">
     <div v-if="reviews" class="my-6 w-full">
-      <h3 class="">{{ $t("reviews") }}</h3>
-      <ReviewCard v-for="review in reviews" :review="review" />
+      <div class="flex align-middle justify-between mb-8">
+        <h3 class="">{{ $t("reviews") }}</h3>
+        <UButton class="self-center" icon="i-lucide-pencil" @click="isOpenReviewFormModal = true">{{
+          $t("formTitle")
+        }}</UButton>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <ReviewCard v-for="review in reviews" :review="review" />
+      </div>
     </div>
-    <UButton icon="i-lucide-pencil-line" :to="`/reviews?show=${project.id}`">{{
-      $t("formTitle")
-    }}</UButton>
   </div>
   <ImageCarouselModal
     v-model="isModalOpen"
@@ -84,6 +88,7 @@ const props = defineProps<{
 }>();
 
 const isModalOpen = ref(false);
+const isOpenReviewFormModal = ref(false);
 const startIndex = ref(0);
 
 const openCarousel = (index: number) => {
