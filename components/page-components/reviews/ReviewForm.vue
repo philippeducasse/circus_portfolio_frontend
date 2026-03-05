@@ -40,15 +40,14 @@
 import { useProjects } from "~/composables/useProjects";
 
 const { projects } = useProjects();
-
+const { projectId } = defineProps<{ projectId?: number }>();
 const form = ref({
   name: "",
   message: "",
-  project_id: undefined,
+  project_id: projectId,
 });
 
 const emit = defineEmits(["submit"]);
-
 const onSubmit = () => {
   emit("submit", { ...form.value });
   form.value = { name: "", message: "", project_id: undefined };

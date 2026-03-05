@@ -7,28 +7,18 @@
       :key="project.title"
       :project="project"
       :index="index"
-      :reviews="reviews?.filter((r) => r.project_id === project.id)"
+      :reviews="reviews?.filter((r: Review) => r.project_id === project.id)"
     />
   </div>
 </template>
 <script setup lang="ts">
 import { useProjects } from "~/composables/useProjects";
 import ProjectDetailView from "~/components/page-components/projects/ProjectDetailView.vue";
+import { type Review } from "~/composables/useReviews";
 
 const { projects } = useProjects();
-const reviews = ref();
+const { reviews, fetchReviews } = useReviews();
 
-const fetchReviews = async () => {
-  try {
-    const response = await fetch("http://localhost:8000");
-    reviews.value = await response.json();
-    console.log("SETTING REVIEWS: ", reviews.value);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-};
-
-console.log("projects", projects.value, reviews.value);
 onMounted(() => {
   fetchReviews();
 });

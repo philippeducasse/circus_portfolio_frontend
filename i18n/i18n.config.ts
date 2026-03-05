@@ -62,6 +62,13 @@ export default defineI18nConfig(() => ({
       show: "Show",
       selectShow: "Select a show",
       submitReview: "Submit",
+      reviewsSubtitle: "What people are saying",
+      thankYou: "Thank you for your review!",
+      noReviews: "No reviews yet. Be the first to leave one!",
+      formSubtitle: "I would love to hear what you thought of my performance. Don't be shy!",
+      anonymous: "Leave blank to stay anonymous",
+      noShow: "Leave blank if not specific to a show",
+      allReviews: "See all reviews",
     },
     fr: {
       projects: "Projets",
@@ -124,6 +131,14 @@ export default defineI18nConfig(() => ({
       show: "Spectacle",
       selectShow: "Choisir un spectacle",
       submitReview: "Envoyer",
+      reviewsSubtitle: "Ce que les gens disent",
+      thankYou: "Merci pour votre avis !",
+      noReviews: "Pas encore d'avis. Soyez le premier à en laisser un !",
+      formSubtitle:
+        "J'adorerais savoir ce que vous avez pensé de mon spectacle. Ne soyez pas timide!",
+      anonymous: "Laissez vide pour rester anonyme",
+      noShow: "Laissez vide si ce n'est pas lié à un spectacle spécifique",
+      allReviews: "Voir tous les avis",
     },
   },
 }));

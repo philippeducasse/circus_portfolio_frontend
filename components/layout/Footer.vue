@@ -1,6 +1,6 @@
 <template>
   <UContainer class="w-full flex flex-col items-center justify-center mb-8">
-    <p class="text-gray-400 text-xs mb-6">info@philippeducasse.com</p>
+    <p class="text-gray-400 text-lg mb-6">info@philippeducasse.com</p>
     <div class="flex justify-center gap-4 md:gap-24 text-primary-500 w-full">
       <NuxtLink
         to="https://www.facebook.com/philocircus"
@@ -25,7 +25,7 @@
       </NuxtLink>
     </div>
     <NuxtLink to="/dsvgo">
-      <p class="text-gray-400 text-xs my-6">DSVGO</p>
+      <p class="text-gray-400 text-xs my-6">Datenschutz</p>
     </NuxtLink>
   </UContainer>
 </template>

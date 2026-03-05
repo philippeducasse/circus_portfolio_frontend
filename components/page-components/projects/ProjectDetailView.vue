@@ -42,17 +42,21 @@
       :class="`rounded-lg w-full h-full aspect-[4/3] object-cover object-top cursor-pointer ${image.class}`"
       @click="openCarousel(index)"
   /></UPageGrid>
-  <div class="">
-    <div v-if="reviews" class="my-6 w-full">
-      <div class="flex align-middle justify-between mb-8">
+  <div class="mt-16 w-full">
+    <div class="my-6 w-full">
+      <div class="flex align-middle justify-between mb-8 mx-4">
         <h3 class="">{{ $t("reviews") }}</h3>
         <UButton class="self-center" icon="i-lucide-pencil" @click="isOpenReviewFormModal = true">{{
           $t("formTitle")
         }}</UButton>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-        <ReviewCard v-for="review in reviews" :review="review" />
+      <div v-if="reviews && reviews.length > 0" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ReviewCard v-for="review in reviews.slice(0, 4)" :review="review" />
       </div>
+      <div v-if="reviews && reviews.length > 4" class="flex justify-center mt-8">
+        <UButton variant="outline" :to="`/reviews`">{{ $t("allReviews") }}</UButton>
+      </div>
+      <p v-else-if="!reviews || reviews.length === 0" class="text-center mx-4">{{ $t("noReviews") }}</p>
     </div>
   </div>
   <ImageCarouselModal
@@ -60,12 +64,14 @@
     :items="project.images || []"
     :start-index="startIndex"
   />
+  <ReviewFormModal v-model:open="isOpenReviewFormModal" :project-id="project.id" />
 </template>
 
 <script setup lang="ts">
 import ReviewCard from "../reviews/ReviewCard.vue";
 import YoutubeEmbedding from "./YoutubeEmbedding.vue";
-import type { Review } from "../reviews/ReviewCard.vue";
+import type { Review } from "../../../composables/useReviews";
+import ReviewFormModal from "../reviews/ReviewFormModal.vue";
 
 interface Image {
   src: string;
