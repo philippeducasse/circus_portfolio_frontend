@@ -20,10 +20,10 @@ export default defineI18nConfig(() => ({
         "A wild and emotional psychedlic journey, where contemporary mime and object manipulation blur the lines between fantasy and reality. Includes invisible bongs and mild twerking.",
       abb: "Ah Bah Bravo (French for 'well done then!') is an interactive, funny, and light-hearted contemporary circus show, ideal for family audiences. Created and performed by Philippe Ducasse, the piece can be adapted between 20 and 45 minutes and is designed for street and open-air performances.",
       abb_short:
-        "A celebration of the joy of life, with flamming staffs in a handstand and gravity defying butt-hooping ",
+        "A celebration of the joy of life, with flamming staffs in a handstand and gravity defying butt-hooping.",
       stone:
         'Philippe has created several shorter performances, many between 5-15 minutes. These include "Stone", which explores physicality, dramaturgy, and dance through manipulation of the contact staff. Philippe also regularly performs a wide range of mime, clown, and fire-spinning pieces.',
-      stone_short: "A powerful exploration of technical virtuosity with the contact staff",
+      stone_short: "A powerful exploration of technical virtuosity with the contact staff.",
       forgotten:
         "A mesmirising and powerful piece, Forgotten explores the depths of minimalism using the contact ball.",
       forgotten_short: "An exploration of the depths of minimalism using the contact ball.",
@@ -66,9 +66,14 @@ export default defineI18nConfig(() => ({
       thankYou: "Thank you for your review!",
       noReviews: "No reviews yet. Be the first to leave one!",
       formSubtitle: "I would love to hear what you thought of my performance. Don't be shy!",
-      anonymous: "Leave blank to stay anonymous",
-      noShow: "Leave blank if not specific to a show",
+      yourOrganisation: "Your organisation",
+      organisationHelp: "E.g. artistic director at Cirque du Soleil.",
+      anonymous: "Leave blank to stay anonymous.",
+      noShow: "Leave blank if not specific to a show.",
       allReviews: "See all reviews",
+      otherReviews: "Other reviews",
+      readMore: "Read more",
+      readLess: "Read less",
     },
     fr: {
       projects: "Projets",
@@ -136,9 +141,14 @@ export default defineI18nConfig(() => ({
       noReviews: "Pas encore d'avis. Soyez le premier à en laisser un !",
       formSubtitle:
         "J'adorerais savoir ce que vous avez pensé de mon spectacle. Ne soyez pas timide!",
-      anonymous: "Laissez vide pour rester anonyme",
-      noShow: "Laissez vide si ce n'est pas lié à un spectacle spécifique",
+      yourOrganisation: "Votre organisation",
+      organisationHelp: "P. ex. directeur artistique au Cirque du Soleil.",
+      anonymous: "Laissez vide pour rester anonyme.",
+      noShow: "Laissez vide si ce n'est pas lié à un spectacle spécifique.",
       allReviews: "Voir tous les avis",
+      otherReviews: "Autres avis",
+      readMore: "Lire la suite",
+      readLess: "Réduire",
     },
   },
 }));

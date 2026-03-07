@@ -8,8 +8,10 @@
       </UButton>
     </div>
     <div v-for="(projectReviews, project_id) in groupedReviews" :key="project_id" class="my-16">
-      <h2 class="text-primary-400 mb-8 text-center">{{ projectMap[project_id]?.title }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h2 class="text-primary-400 mb-8 text-center">
+        {{ project_id === `-1` ? $t("otherReviews") : projectMap[project_id]?.title }}
+      </h2>
+      <div class="md:columns-2 columns-1 gap-8 space-y-8">
         <ReviewCard
           v-for="review in projectReviews"
           :key="review.id"
@@ -42,7 +44,7 @@ onMounted(() => {
 
 const groupedReviews = computed(() => {
   return reviews.value.reduce((acc: Record<number, Review[]>, review: Review) => {
-    (acc[review.project_id] ??= []).push(review);
+    (acc[review.project_id ?? -1] ??= []).push(review);
     return acc;
   }, {});
 });

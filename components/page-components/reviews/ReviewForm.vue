@@ -1,12 +1,14 @@
 <template>
   <div class="max-w-2xl w-full mx-auto">
     <h3 class="mb-6 text-center">{{ $t("formTitle") }}</h3>
-    <p class="text-base my-2">{{ $t("formSubtitle") }}</p>
+    <p class="text-base mt-2 mb-6">{{ $t("formSubtitle") }}</p>
     <form class="flex flex-col gap-5" @submit.prevent="onSubmit">
       <UFormField :label="$t('yourName')" :help="$t('anonymous')">
         <UInput id="name" v-model="form.name" class="w-full" size="lg" />
       </UFormField>
-
+      <UFormField :label="$t('yourOrganisation')" :help="$t('organisationHelp')">
+        <UInput id="organisation" v-model="form.organisation" class="w-full" size="lg" />
+      </UFormField>
       <UFormField :label="$t('yourMessage')">
         <UTextarea
           id="message"
@@ -43,6 +45,7 @@ const { projects } = useProjects();
 const { projectId } = defineProps<{ projectId?: number }>();
 const form = ref({
   name: "",
+  organisation: "",
   message: "",
   project_id: projectId,
 });
@@ -50,6 +53,6 @@ const form = ref({
 const emit = defineEmits(["submit"]);
 const onSubmit = () => {
   emit("submit", { ...form.value });
-  form.value = { name: "", message: "", project_id: undefined };
+  form.value = { name: "", message: "", project_id: undefined, organisation: "" };
 };
 </script>

@@ -50,7 +50,7 @@
           $t("formTitle")
         }}</UButton>
       </div>
-      <div v-if="reviews && reviews.length > 0" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div v-if="reviews && reviews.length > 0" class="md:columns-2 columns-1 gap-8 space-y-8">
         <ReviewCard v-for="review in reviews.slice(0, 4)" :review="review" />
       </div>
       <div v-if="reviews && reviews.length > 4" class="flex justify-center mt-8">

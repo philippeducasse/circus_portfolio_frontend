@@ -1,15 +1,17 @@
 export interface Review {
-  name: string;
+  name?: string;
+  organisation?: string;
   message: string;
+  message_en?: string;
+  message_fr?: string;
   date: string;
-  project_id: number;
+  project_id?: number;
   id: number;
 }
 
 const reviews = ref<Review[]>([]);
 
 export const useReviews = () => {
-
   const fetchReviews = async () => {
     try {
       const response = await fetch("http://localhost:8000");
