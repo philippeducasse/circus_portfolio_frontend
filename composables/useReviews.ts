@@ -14,7 +14,7 @@ const reviews = ref<Review[]>([]);
 export const useReviews = () => {
   const fetchReviews = async () => {
     try {
-      const response = await fetch("http://localhost:8000");
+      const response = await fetch("http://localhost:8000/reviews");
       reviews.value = await response.json();
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -22,7 +22,7 @@ export const useReviews = () => {
   };
 
   const submitReview = async (data: unknown): Promise<boolean> => {
-    const response = await fetch("http://localhost:8000", {
+    const response = await fetch("http://localhost:8000/reviews", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
