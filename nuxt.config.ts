@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.NUXT_PUBLIC_API_URL,
+    },
+  },
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxtjs/i18n", "@nuxtjs/google-fonts", "@nuxt/image"],
   css: ["~/assets/css/main.css"],

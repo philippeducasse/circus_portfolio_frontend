@@ -34,4 +34,4 @@ jobs:
             docker pull pducasse/philocircus:latest
             docker stop philocircus || true
             docker rm philocircus || true
-            docker run -d -p 3000:80 --name philocircus pducasse/philocircus:latest
+            docker run -d -p 3000:80 --name philocircus -e BACKEND_URL=${{ secrets.BACKEND_URL }} pducasse/philocircus:latest

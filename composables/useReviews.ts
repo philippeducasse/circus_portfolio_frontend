@@ -8,13 +8,14 @@ export interface Review {
   project_id?: number;
   id: number;
 }
-
 const reviews = ref<Review[]>([]);
 
 export const useReviews = () => {
+  const config = useRuntimeConfig();
+
   const fetchReviews = async () => {
     try {
-      const response = await fetch("http://localhost:8000/reviews");
+      const response = await fetch(`${config.public.apiUrl}/reviews`);
       reviews.value = await response.json();
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -22,7 +23,7 @@ export const useReviews = () => {
   };
 
   const submitReview = async (data: unknown): Promise<boolean> => {
-    const response = await fetch("http://localhost:8000/reviews", {
+    const response = await fetch(`${config.public.apiUrl}/reviews`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
