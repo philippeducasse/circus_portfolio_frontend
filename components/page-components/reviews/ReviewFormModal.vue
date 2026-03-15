@@ -1,7 +1,7 @@
 <template>
   <UModal v-model:open="open">
     <template #content>
-      <div class="p-6">
+      <div class="p-6 overflow-y-auto">
         <ReviewForm @submit="handleSubmit" :projectId="projectId" />
       </div>
     </template>
