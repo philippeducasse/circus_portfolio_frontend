@@ -31,7 +31,14 @@ jobs:
           username: ${{ secrets.OVH_USER }}
           key: ${{ secrets.OVH_KEY }}
           script: |
+            docker network create philocircus_net || true
             docker pull pducasse/philocircus:latest
             docker stop philocircus || true
             docker rm philocircus || true
-            docker run -d -p 3000:80 --name philocircus -e BACKEND_URL=${{ secrets.BACKEND_URL }} pducasse/philocircus:latest
+            docker run -d \
+              -p 3000:3000 \
+              --network philocircus_net \
+              --name philocircus \
+              -e NUXT_API_URL=${{ secrets.NUXT_API_URL }} \
+              -e NUXT_PUBLIC_API_URL=${{ secrets.NUXT_PUBLIC_API_URL }} \
+              pducasse/philocircus:latest

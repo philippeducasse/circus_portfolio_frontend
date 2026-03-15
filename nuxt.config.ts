@@ -2,8 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   runtimeConfig: {
+    apiUrl: process.env.NUXT_API_URL, // server-side only (internal Docker network)
     public: {
-      apiUrl: process.env.NUXT_PUBLIC_API_URL,
+      apiUrl: process.env.NUXT_PUBLIC_API_URL, // client-side (public URL)
     },
   },
   devtools: { enabled: true },

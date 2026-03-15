@@ -7,6 +7,6 @@ RUN yarn build
 
 FROM node:24-alpine AS production
 WORKDIR /app
-COPY --from=build /app/.output ./output
+COPY --from=build /app/.output ./.output
 EXPOSE 3000
-CMD ["node", "output/server/index.mjs"]
+CMD ["node", ".output/server/index.mjs"]
