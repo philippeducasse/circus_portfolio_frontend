@@ -1,4 +1,4 @@
-- [ ] Live site [www.philippeducasse.com](https://philippeducasse.com)
+Live site [www.philippeducasse.com](https://philippeducasse.com)
 
 
 # Deployment
