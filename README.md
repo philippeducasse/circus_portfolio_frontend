@@ -1,3 +1,6 @@
+- [ ] Live site [www.philippeducasse.com](https://philippeducasse.com)
+
+
 # Deployment
 
 uses docker, builds the image through the deploy.yaml
