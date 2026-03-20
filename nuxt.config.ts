@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   runtimeConfig: {
-    apiUrl: process.env.NUXT_API_URL, // server-side only (internal Docker network)
+    apiUrl: process.env.NUXT_API_URL ?? "http://localhost:8000", // server-side only (internal Docker network)
     public: {
-      apiUrl: process.env.NUXT_PUBLIC_API_URL, // client-side (public URL)
+      apiUrl: process.env.NUXT_PUBLIC_API_URL ?? "http://localhost:8000", // client-side (public URL)
     },
   },
   devtools: { enabled: true },
@@ -22,11 +22,11 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-       locales: [
-      { code: 'en', language: 'en-US' },
-      { code: 'fr', language: 'fr-FR' }
+    locales: [
+      { code: "en", language: "en-US" },
+      { code: "fr", language: "fr-FR" },
     ],
-    strategy: "no_prefix"
+    strategy: "no_prefix",
   },
   ui: {
     fonts: true,
@@ -42,7 +42,11 @@ export default defineNuxtConfig({
         lang: "en",
       },
       meta: [
-        { name: "description", content: "Philippe Ducasse is a contemporary circus artist specializing in contact staff and contact ball juggling, mime, and theatrical performance. Based in Berlin." },
+        {
+          name: "description",
+          content:
+            "Philippe Ducasse is a contemporary circus artist specializing in contact staff and contact ball juggling, mime, and theatrical performance. Based in Berlin.",
+        },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },

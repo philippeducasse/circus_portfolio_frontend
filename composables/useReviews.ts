@@ -4,9 +4,11 @@ export interface Review {
   message: string;
   message_en?: string;
   message_fr?: string;
+  message_de?: string;
   date: string;
   project_id?: number;
   id: number;
+  original_message_language?: string;
 }
 const reviews = ref<Review[]>([]);
 
@@ -14,6 +16,7 @@ export const useReviews = () => {
   const config = useRuntimeConfig();
 
   const fetchReviews = async () => {
+    console.log("URL: ", config.public.apiUrl);
     try {
       const response = await fetch(`${config.public.apiUrl}/reviews`);
       reviews.value = await response.json();

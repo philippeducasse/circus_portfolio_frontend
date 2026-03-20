@@ -74,6 +74,8 @@ export default defineI18nConfig(() => ({
       otherReviews: "Other reviews",
       readMore: "Read more",
       readLess: "Read less",
+      translatedFrom: "Translated from {locale}",
+      anonymousAuthor: "Anonymous",
     },
     fr: {
       projects: "Projets",
@@ -149,6 +151,8 @@ export default defineI18nConfig(() => ({
       otherReviews: "Autres avis",
       readMore: "Lire la suite",
       readLess: "Réduire",
+      translatedFrom: "Traduit du {locale}",
+      anonymousAuthor: "Anonyme",
     },
   },
 }));

@@ -10,7 +10,10 @@
           :class="['overflow-hidden transition-all duration-300', expanded ? '' : 'max-h-[13rem]']"
         >
           <p class="text-base text-left leading-relaxed text-white/90">
-            {{ message }}
+            {{ displayMessage }}
+          </p>
+          <p v-if="isTranslated" class="text-xs text-right text-white/50 mt-3">
+            {{ $t("translatedFrom", { locale: originLocaleLabel }) }}
           </p>
         </div>
         <button
@@ -24,7 +27,7 @@
       <div class="flex">
         <span class="text-base text-white/40 h-auto my-auto">{{ formattedDate }}</span>
         <div class="flex flex-col ml-auto align-middle">
-          <span class="text-lg font-semibold text-white/80">— {{ name || "Anonymous" }}</span>
+          <span class="text-lg font-semibold text-white/80">— {{ name || $t("anonymousAuthor") }}</span>
           <span v-if="organisation" class="text-base text-white/80">{{ organisation }}</span>
         </div>
       </div>
@@ -40,11 +43,37 @@ const props = defineProps<{
   showProjectTitle?: boolean;
 }>();
 
-const { name, message, date, organisation } = props.review;
+const { locale } = useI18n();
+const { name, date, organisation, original_message_language } = props.review;
 
-const formattedDate = computed(() =>
-  new Date(date).toLocaleDateString(undefined, { year: "numeric", month: "short" }),
+const displayMessage = computed(() => {
+  const localeKey = `message_${locale.value}`;
+  const localeMessage = props.review[localeKey as keyof Review];
+  return (localeMessage as string) || props.review.message;
+});
+
+const isTranslated = computed(
+  () => original_message_language && original_message_language !== locale.value,
 );
+
+const originLocaleLabel = computed(() => {
+  const labels: Record<string, string> = {
+    en: "English",
+    fr: "French",
+    de: "German",
+  };
+  return labels[original_message_language || ""] || original_message_language;
+});
+
+const formattedDate = computed(() => {
+  // Parse "YY-MM-DD HH:MM:SS" format from backend
+  const datePart = date.split(" ")[0];
+  if (!datePart) return "Invalid Date";
+  const [year, month, day] = datePart.split("-");
+  const fullYear = parseInt(year, 10) < 100 ? 2000 + parseInt(year, 10) : parseInt(year, 10);
+  const dateObj = new Date(fullYear, parseInt(month, 10) - 1, parseInt(day, 10));
+  return dateObj.toLocaleDateString(undefined, { year: "numeric", month: "short" });
+});
 
 const messageEl = ref<HTMLElement | null>(null);
 const expanded = ref(false);

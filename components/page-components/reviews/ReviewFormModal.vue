@@ -18,9 +18,7 @@ const toast = useToast();
 
 const handleSubmit = async (data: unknown) => {
   open.value = false;
-  const ok = await submitReview(data);
-  if (ok) {
-    toast.add({ title: $t("thankYou"), class: "text-center" });
-  }
+  toast.add({ title: $t("thankYou"), class: "text-center" });
+  await submitReview(data);
 };
 </script>
