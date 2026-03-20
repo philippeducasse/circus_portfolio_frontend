@@ -56,20 +56,20 @@ const isTranslated = computed(
   () => original_message_language && original_message_language !== locale.value,
 );
 
+const { t } = useI18n();
 const originLocaleLabel = computed(() => {
-  const labels: Record<string, string> = {
-    en: "English",
-    fr: "French",
-    de: "German",
-  };
-  return labels[original_message_language || ""] || original_message_language;
+  if (!original_message_language) return "";
+  const key = `locale_${original_message_language}`;
+  return t(key);
 });
 
 const formattedDate = computed(() => {
+  if (!date) return "Invalid Date";
   // Parse "YY-MM-DD HH:MM:SS" format from backend
   const datePart = date.split(" ")[0];
   if (!datePart) return "Invalid Date";
   const [year, month, day] = datePart.split("-");
+  if (!year || !month || !day) return "Invalid Date";
   const fullYear = parseInt(year, 10) < 100 ? 2000 + parseInt(year, 10) : parseInt(year, 10);
   const dateObj = new Date(fullYear, parseInt(month, 10) - 1, parseInt(day, 10));
   return dateObj.toLocaleDateString(undefined, { year: "numeric", month: "short" });

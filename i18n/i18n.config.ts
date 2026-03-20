@@ -76,6 +76,9 @@ export default defineI18nConfig(() => ({
       readLess: "Read less",
       translatedFrom: "Translated from {locale}",
       anonymousAuthor: "Anonymous",
+      locale_en: "English",
+      locale_fr: "French",
+      locale_de: "German",
     },
     fr: {
       projects: "Projets",
@@ -153,6 +156,9 @@ export default defineI18nConfig(() => ({
       readLess: "Réduire",
       translatedFrom: "Traduit du {locale}",
       anonymousAuthor: "Anonyme",
+      locale_en: "Anglais",
+      locale_fr: "Français",
+      locale_de: "Allemand",
     },
   },
 }));
