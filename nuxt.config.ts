@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiUrl: process.env.NUXT_API_URL ?? "http://localhost:8000", // server-side only (internal Docker network)
     public: {
-      apiUrl: process.env.NUXT_PUBLIC_API_URL ?? "http://localhost:8000", // client-side (public URL)
+      // apiUrl: process.env.NUXT_PUBLIC_API_URL ?? "http://localhost:8000", // client-side (public URL)
+      apiUrl: "https://philippeducasse.com/api", // client-side (public URL)
     },
   },
   devtools: { enabled: true },

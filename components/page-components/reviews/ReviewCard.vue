@@ -27,8 +27,12 @@
       <div class="flex">
         <span class="text-base text-white/40 h-auto my-auto">{{ formattedDate }}</span>
         <div class="flex flex-col ml-auto align-middle">
-          <span class="text-lg font-semibold text-white/80">— {{ name || $t("anonymousAuthor") }}</span>
-          <span v-if="organisation" class="text-base text-white/80">{{ organisation }}</span>
+          <span class="text-lg text-right font-semibold text-white/80"
+            >— {{ name || $t("anonymousAuthor") }}</span
+          >
+          <span v-if="organisation" class="text-base text-right text-white/80 whitespace-pre-line">{{
+            organisation.replace(/, /g, '\n')
+          }}</span>
         </div>
       </div>
     </div>
@@ -59,7 +63,7 @@ const isTranslated = computed(
 const { t } = useI18n();
 const originLocaleLabel = computed(() => {
   if (!original_message_language) return "";
-  const key = `locale_${original_message_language}`;
+  const key = `locale_${original_message_language}_from`;
   return t(key);
 });
 
