@@ -2,7 +2,11 @@
   <div
     class="text-center flex flex-col h-full items-center gap-y-[5vh] justify-evenly md:-mt-4 min-h-[80vh]"
   >
-    <h1 class="mt-16 md:mt-4">Philippe Ducasse</h1>
+    <div class="flex gap-6 mt-2">
+      <h1>Philippe</h1>
+      <Logo />
+      <h1>Ducasse</h1>
+    </div>
     <UCarousel
       ref="carouselRef"
       v-slot="{ item }"
@@ -29,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import Logo from "~/components/layout/Logo.vue";
 import ProjectOverview from "~/components/page-components/projects/ProjectOverview.vue";
 
 const { projects } = useProjects();

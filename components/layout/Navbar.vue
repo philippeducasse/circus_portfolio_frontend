@@ -1,17 +1,18 @@
 <template>
   <UContainer class="w-full flex items-center justify-evenly mt-4 z-1000">
-    <LogoWithName />
     <div class="hidden md:flex md:justify-evenly w-full h-full">
-      <UNavigationMenu
-        :items="horizontalLinks"
-        class="w-fit relative"
-        arrow
-        content-orientation="vertical"
-        :ui="{
-          content: 'w-fit',
-          childList: 'cursor-pointer',
-        }"
-      />
+      <div class="relative">
+        <UNavigationMenu
+          :items="horizontalLinks"
+          class="w-fit relative"
+          arrow
+          content-orientation="vertical"
+          :ui="{
+            content: 'w-fit',
+            childList: 'cursor-pointer',
+          }"
+        />
+      </div>
     </div>
     <div class="flex items-center justify-between w-full md:hidden place-content-center">
       <NuxtImg
@@ -51,7 +52,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
-import LogoWithName from "./LogoWithName.vue";
+import Logo from "./Logo.vue";
 import { UNavigationMenu } from "#components";
 
 const { locale, setLocale } = useI18n();
